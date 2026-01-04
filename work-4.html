@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品 No.4</title>
+    <link rel="icon" type="image/png" href="img/favicon.svg">
+    <link rel="apple-touch-icon" href="img/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/work.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="logo">WORKS</h1>
+        <nav class="main-nav">
+            <a href="index.html#home">HOME</a>
+            <a href="index.html#profile">PROFILE</a>
+            <a href="index.html#works">WORKS</a>
+            <a href="index.html#contacts">CONTACT</a>
+            <div class="lang-switch">
+                <button onclick="toggleLanguage('ja')" id="btn-ja" class="active">JP</button>
+                <button onclick="toggleLanguage('en')" id="btn-en">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="work-detail-wrapper">
+        <div class="work-visuals">
+            <div class="image-box">
+                <video autoplay muted loop playsinline preload="auto" class="work-video">
+                    <source src="./img/works/movie.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="image-box">
+                <img src="./img/works/movie-site.png" 
+                    alt="" 
+                    data-en-alt="">
+            </div>
+
+            <div class="detail-footer-left">
+                <h3 class="footer-name">BUI HAN</h3>
+                <a href="mailto:hanbui.c@gmail.com" class="footer-link">hanbui.c<span class="footer-special-at">@</span>gmail.com</a>
+                <div class="footer-socials">
+                    <a href="https://behance.net/hanbu_i" target="_blank" rel="noopener noreferrer"><img src="./img/behance.png" alt="Behance"></a>
+                    <a href="https://github.com/hanb0999" target="_blank" rel="noopener noreferrer"><img src="./img/github.png" alt="Github"></a>
+                    <a href="https://linkedin.com/in/han-bui09" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png" alt="Linkedin"></a>
+                </div>
+                <p class="footer-copy">© 2025 Bui Han</p>
+            </div>
+        </div>
+        
+        <div class="work-info-panel">
+            <h2 class="project-title">MOVIE SITE</h2>
+
+            <div class="detail-group">
+                <h3>
+                    <span class="lang-ja">作品概要</span>
+                    <span class="lang-en">Overview</span>
+                </h3>
+                <ul class="info-list">
+                    <li>
+                        <span class="lang-ja">映画サイト制作をテーマとした課題として制作したWebサイト</span>
+                        <span class="lang-en">A website created as an assignment focused on movie site design.</span>
+                    </li>
+                    <li>
+                        <span class="lang-ja">ナビゲーション構成「HOME / STORY / CHARACTER / CAST」を必須要件として設計</span>
+                        <span class="lang-en">Designed with a required navigation structure: HOME, STORY, CHARACTER, and CAST.</span>
+                    </li>
+                    <li>
+                        <span class="lang-ja">映画『The Grand Budapest Hotel』の世界観に合うよう、ビジュアル・配色・レイアウトを再構成</span>
+                        <span class="lang-en">Reconstructed the visuals, color palette, and layout to match the aesthetic of the film "The Grand Budapest Hotel."</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="detail-group">
+                <h3>
+                    <span class="lang-ja">制作年月日</span>
+                    <span class="lang-en">Production Date</span>
+                </h3>
+                <p>
+                    <span class="lang-ja">2025年06月25日</span>
+                    <span class="lang-en">June 25, 2025</span>
+                </p>
+            </div>
+
+            <div class="detail-group">
+                <h3>
+                    <span class="lang-ja">制作担当</span>
+                    <span class="lang-en">Role</span>
+                </h3>
+                <ul class="info-list">
+                    <li><span class="lang-ja">デザインおよびコーディングをすべて担当</span><span class="lang-en">Responsible for all design and coding.</span></li>
+                    <li><span class="lang-ja">全体のトーンや構図の統一を意識した素材の加工・調整</span><span class="lang-en">Processed and adjusted visual assets to ensure a unified tone and composition.</span></li>
+                </ul>
+            </div>
+
+            <div class="detail-group">
+                <h3>
+                    <span class="lang-ja">コンセプト</span>
+                    <span class="lang-en">Concept</span>
+                </h3>
+                <ul class="info-list">
+                    <li>
+                        <span class="lang-ja">映画の象徴的なパステルピンクとイエローをメインカラーに採用</span>
+                        <span class="lang-en">Adopted the film's iconic pastel pink and orange as the primary color scheme.</span>
+                    </li>
+                    <li>
+                        <span class="lang-ja">「STORY」「CHARACTER」では夜のシーンを意識した暗めの背景を使用し、コントラストを演出</span>
+                        <span class="lang-en">Used darker backgrounds for "STORY" and "CHARACTER" pages to contrast with the bright pastel tones, evoking night scenes.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="detail-group">
+                <h3>
+                    <span class="lang-ja">工夫点</span>
+                    <span class="lang-en">Reflections</span>
+                </h3>
+                <ul class="info-list">
+                    <li>
+                        <span class="lang-ja">「CHARACTER」ページ：画像クリックでテキストが表示される演出を実装</span>
+                        <span class="lang-en">Implemented a feature on the "CHARACTER" page where clicking an image reveals text.</span>
+                    </li>
+                    <li>
+                        <span class="lang-ja">「CAST」ページ：ホバー時にキャラクターから実在の俳優写真へ切り替わる表現</span>
+                        <span class="lang-en">Implemented a hover effect on the "CAST" page that switches from character illustrations to actor photos.</span>
+                    </li>
+                    <li>
+                        <span class="lang-ja">課題：演出だけでなく、ユーザビリティや目的との整合性を考慮する重要性を学んだ</span>
+                        <span class="lang-en">Lesson learned: Recognized the importance of balancing visual flair with usability and purposeful design.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="detail-group">
+                <h3>
+                    <span class="lang-ja">制作環境と使用言語</span>
+                    <span class="lang-en">Tools & Environment</span>
+                </h3>
+                <p>HTML / CSS3 / JavaScript <br>Photoshop</p>
+            </div>
+
+
+            <a href="https://hanb0999.github.io/movie-site/" target="_blank" class="site-link">
+                <span class="lang-ja">SITEを見る →</span>
+                <span class="lang-en">View Website →</span>
+            </a>
+
+            <div class="mini-carousel-wrapper">
+                <div class="mini-carousel" id="workCarousel">
+                    <a href="work-11.html" class="mini-card" style="background-image: url('./img/top/work-11.jpg');"></a>
+                    <a href="work-10.html" class="mini-card" style="background-image: url('./img/top/work-10.jpg');"></a>
+                    <a href="work-9.html" class="mini-card" style="background-image: url('./img/top/work-9.jpg');"></a>
+                    <a href="work-8.html" class="mini-card" style="background-image: url('./img/top/work-8.jpg');"></a>
+                    <a href="work-7.html" class="mini-card" style="background-image: url('./img/top/work-7.jpg');"></a>
+                    <a href="work-6.html" class="mini-card" style="background-image: url('./img/top/work-6.jpg');"></a>
+                    <a href="work-5.html" class="mini-card" style="background-image: url('./img/top/work-5.jpg');"></a>
+                    <a href="work-4.html" class="mini-card is-current" style="background-image: url('./img/top/work-4.jpg');"></a>
+                    <a href="work-3.html" class="mini-card" style="background-image: url('./img/top/work-3.jpg');"></a>
+                    <a href="work-2.html" class="mini-card is-current" style="background-image: url('./img/top/work-2.jpg');"></a>
+                    <a href="work-1.html" class="mini-card" style="background-image: url('./img/top/work-1.jpg');"></a>
+                </div>
+
+                <div class="carousel-nav-row">
+                    <a href="#" id="prevWorkBtn" class="prev-work-text">
+                        <span class="lang-ja">←前の作品</span><span class="lang-en">← Prev</span>
+                    </a>
+                    
+                    <div class="arrow-wrapper">
+                        <button class="carousel-arrow" onclick="scrollCarousel(-1)">&#8249;</button>
+                        <button class="carousel-arrow" onclick="scrollCarousel(1)">&#8250;</button>
+                    </div>
+                    
+                    <a href="#" id="nextWorkBtn" class="next-work-text">
+                        <span class="lang-ja">次の作品→</span><span class="lang-en">Next →</span>
+                    </a>
+                </div>
+            </div>
+
+        <div class="bottom-logo">
+            <img src="./img/name-logo.svg" alt="Bui Han Logo">
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <button class="lb-arrow lb-prev">&#8249;</button>
+        <div class="lb-container">
+            <video id="lightbox-video" controls playsinline style="display: none;"></video>
+            <img id="lightbox-img" src="" alt="">
+            <div id="lightbox-caption" style="display: none;"></div>
+        </div>
+        <button class="lb-arrow lb-next">&#8250;</button>
+    </div>
+</body>
+</html>
