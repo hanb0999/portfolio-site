@@ -45,30 +45,53 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 600);
     });
 
+    const slider = document.querySelector('.gallery-wrapper');
+    if (slider) {
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        const startAction = (e) => {
+            isDown = true;
+            slider.classList.add('active');
+            startX = (e.pageX || e.touches[0].pageX) - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        };
+
+        const stopAction = () => {
+            isDown = false;
+            slider.classList.remove('active');
+        };
+
+        const moveAction = (e) => {
+            if (!isDown) return;
+            if (e.type === 'mousemove') e.preventDefault();
+            
+            const x = (e.pageX || (e.touches && e.touches[0].pageX)) - slider.offsetLeft;
+            const walk = (x - startX) * 2; 
+            slider.scrollLeft = scrollLeft - walk;
+        };
+
+        slider.addEventListener('mousedown', startAction);
+        slider.addEventListener('mouseleave', stopAction);
+        slider.addEventListener('mouseup', stopAction);
+        slider.addEventListener('mousemove', moveAction);
+
+        slider.addEventListener('touchstart', startAction, { passive: true });
+        slider.addEventListener('touchend', stopAction);
+        slider.addEventListener('touchmove', moveAction, { passive: true });
+    }
+
     const cardLinks = document.querySelectorAll('.card-link');
     cardLinks.forEach(link => {
         const card = link.querySelector('.card');
-        link.addEventListener('click', () => {
-            document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
-            card.classList.add('active');
-            card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        link.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768 && !card.classList.contains('active')) {
+                e.preventDefault();
+                document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
+                card.classList.add('active');
+                card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            }
         });
     });
-
-    const slider = document.querySelector('.gallery-wrapper');
-    if (slider) {
-        let isDown = false; let startX; let scrollLeft;
-        slider.addEventListener('mousedown', (e) => {
-            isDown = true; slider.classList.add('active');
-            startX = e.pageX - slider.offsetLeft; scrollLeft = slider.scrollLeft;
-        });
-        slider.addEventListener('mouseleave', () => { isDown = false; });
-        slider.addEventListener('mouseup', () => { isDown = false; });
-        slider.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - slider.offsetLeft;
-            const walk = (x - startX) * 2; slider.scrollLeft = scrollLeft - walk;
-        });
-    }
 });
