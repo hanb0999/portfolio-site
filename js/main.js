@@ -22,36 +22,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const screen = document.getElementById('loading-screen');
     const bar = document.getElementById('handler-bar');
     const logoFill = document.getElementById('handler-logo-fill');
-    const hasSeenLoader = sessionStorage.getItem('hasSeenLoader');
+    
+    document.body.style.overflow = 'hidden';
+    let progress = 0;
 
-    if (hasSeenLoader) {
-        if (screen) screen.style.display = 'none';
-        document.body.style.overflow = 'visible';
-    } else {
-        document.body.style.overflow = 'hidden';
-        let progress = 0;
-        const interval = setInterval(() => {
-            if (progress < 90) {
-                progress += Math.random() * 3 + 1; 
-                if (progress > 90) progress = 90;
-                if (bar) bar.style.width = progress + '%';
-                if (logoFill) logoFill.style.height = progress + '%';
-            }
-        }, 400);
+    const interval = setInterval(() => {
+        if (progress < 90) {
+            progress += 1; 
+            if (bar) bar.style.width = progress + '%';
+            if (logoFill) logoFill.style.height = progress + '%';
+        }
+    }, 60);
 
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                clearInterval(interval);
-                if (bar) bar.style.width = '100%';
-                if (logoFill) logoFill.style.height = '100%';
-                setTimeout(() => {
-                    if (screen) screen.classList.add('loaded');
-                    document.body.style.overflow = '';
-                    sessionStorage.setItem('hasSeenLoader', 'true');
-                }, 800);
-            }, 500);
-        });
-    }
+    window.addEventListener('load', () => {
+        clearInterval(interval);
+        if (bar) bar.style.width = '100%';
+        if (logoFill) logoFill.style.height = '100%';
+
+        setTimeout(() => {
+            if (screen) screen.classList.add('loaded');
+            document.body.style.overflow = 'visible';
+        }, 600);
+    });
 
     const cardLinks = document.querySelectorAll('.card-link');
     cardLinks.forEach(link => {
