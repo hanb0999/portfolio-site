@@ -704,6 +704,7 @@ header {
 /* WORK RESPONSIVE */
 @media (max-width: 1024px) {
     .work-detail-wrapper {
+        margin-top: -80px;
         flex-direction: column;
         gap: 40px;
     }
