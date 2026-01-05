@@ -63,3 +63,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const bar = document.getElementById('handler-bar');
+    const logoFill = document.getElementById('handler-logo-fill');
+    const screen = document.getElementById('loading-screen');
+    let progress = 0;
+
+    if (!screen) return; 
+
+    document.body.style.overflow = 'hidden';
+
+    const interval = setInterval(() => {
+        if (progress < 90) {
+            progress += Math.random() * 3 + 1; 
+            if (progress > 90) progress = 90;
+            
+            if (bar) bar.style.width = progress + '%';
+            if (logoFill) logoFill.style.height = progress + '%';
+        }
+    }, 400);
+
+    const finishLoading = () => {
+        clearInterval(interval);
+        if (bar) bar.style.width = '100%';
+        if (logoFill) logoFill.style.height = '100%';
+
+        setTimeout(() => {
+            screen.classList.add('loaded'); 
+            document.body.style.overflow = ''; 
+        }, 800);
+    };
+
+    if (document.readyState === 'complete') {
+        finishLoading();
+    } else {
+        window.addEventListener('load', finishLoading);
+    }
+});
