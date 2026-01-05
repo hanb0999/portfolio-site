@@ -143,3 +143,21 @@ document.addEventListener('DOMContentLoaded', () => {
         if (touchEndX > touchStartX + 50) document.querySelector('.lb-prev')?.click();
     }, {passive: true});
 });
+
+const siteLinks = document.querySelectorAll('.site-link');
+siteLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            const isEn = document.body.classList.contains('lang-en-active');
+            
+            const message = isEn 
+                ? "This site is designed for desktop. It may not display correctly on mobile. Continue?" 
+                : "このサイトはデスクトップ専用設計です。モバイルでは正しく表示されない場合があります。移動しますか？";
+                
+            const confirmVisit = confirm(message);
+            if (!confirmVisit) {
+                e.preventDefault();
+            }
+        }
+    });
+});
