@@ -21,9 +21,8 @@ function scrollCarousel(direction) {
     const firstCard = carousel.querySelector('.mini-card:not(.is-current)');
     if (!firstCard) return;
     const cardWidth = firstCard.offsetWidth + 8;
-    const moveDistance = cardWidth * 2;
     carousel.style.scrollSnapType = 'none';
-    carousel.scrollBy({ left: direction * moveDistance, behavior: 'smooth' });
+    carousel.scrollBy({ left: direction * (cardWidth * 2), behavior: 'smooth' });
     setTimeout(() => { carousel.style.scrollSnapType = 'x mandatory'; }, 500);
 }
 
@@ -35,31 +34,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const match = currentPath.match(/work-(\d+)\.html/);
     if (match) {
         const currentNum = parseInt(match[1]);
-        const nextNum = currentNum <= 1 ? 11 : currentNum - 1;
-        const prevNum = currentNum >= 11 ? 1 : currentNum + 1;
-        document.getElementById('nextWorkBtn').href = `work-${nextNum}.html`;
-        document.getElementById('prevWorkBtn').href = `work-${prevNum}.html`;
+        const total = 11;
+        document.getElementById('nextWorkBtn').href = `work-${currentNum <= 1 ? total : currentNum - 1}.html`;
+        document.getElementById('prevWorkBtn').href = `work-${currentNum >= total ? 1 : currentNum + 1}.html`;
     }
 
     const screen = document.getElementById('loading-screen');
     const bar = document.getElementById('handler-bar');
     const logoFill = document.getElementById('handler-logo-fill');
-    const hasSeenIndexLoader = sessionStorage.getItem('hasSeenIndexLoader');
 
-    if (hasSeenIndexLoader) {
-        if (screen) screen.style.display = 'none';
-        document.body.style.overflow = 'visible';
+    if (document.readyState === 'complete') {
+        if (screen) screen.classList.add('loaded');
     } else {
         document.body.style.overflow = 'hidden';
         let progress = 0;
         const interval = setInterval(() => {
-            if (progress < 90) {
-                progress += Math.random() * 3 + 1; 
-                if (progress > 90) progress = 90;
+            if (progress < 95) {
+                progress += 2;
                 if (bar) bar.style.width = progress + '%';
                 if (logoFill) logoFill.style.height = progress + '%';
             }
-        }, 400);
+        }, 30);
 
         window.addEventListener('load', () => {
             clearInterval(interval);
@@ -67,9 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (logoFill) logoFill.style.height = '100%';
             setTimeout(() => {
                 if (screen) screen.classList.add('loaded');
-                document.body.style.overflow = '';
-                sessionStorage.setItem('hasSeenIndexLoader', 'true');
-            }, 800);
+                document.body.style.overflow = 'visible';
+            }, 600);
         });
     }
 
