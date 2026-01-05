@@ -72,3 +72,67 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('preferredLang') || 'ja';
+    toggleLanguage(savedLang);
+
+    const screen = document.getElementById('loading-screen');
+    const bar = document.getElementById('handler-bar');
+    const logoFill = document.getElementById('handler-logo-fill');
+    
+    document.body.style.overflow = 'hidden';
+
+    const fallback = setTimeout(() => {
+        if (screen && !screen.classList.contains('loaded')) {
+            screen.classList.add('loaded');
+            document.body.style.overflow = 'visible';
+        }
+    }, 3000);
+
+    window.addEventListener('load', () => {
+        clearTimeout(fallback);
+        if (bar) bar.style.width = '100%';
+        if (logoFill) logoFill.style.height = '100%';
+
+        setTimeout(() => {
+            if (screen) screen.classList.add('loaded');
+            document.body.style.overflow = 'visible';
+        }, 600);
+    });
+
+    const cardLinks = document.querySelectorAll('.card-link');
+    cardLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const card = link.querySelector('.card');
+            
+            if (window.innerWidth <= 768 && !card.classList.contains('active')) {
+                e.preventDefault(); 
+                document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
+                card.classList.add('active');
+            } else {
+                document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
+                card.classList.add('active');
+            }
+        });
+    });
+
+    const slider = document.querySelector('.gallery-wrapper');
+    if (slider && window.innerWidth > 768) {
+        let isDown = false, startX, scrollLeft;
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+        slider.addEventListener('mouseleave', () => isDown = false);
+        slider.addEventListener('mouseup', () => isDown = false);
+        slider.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 2;
+            slider.scrollLeft = scrollLeft - walk;
+        });
+    }
+});
