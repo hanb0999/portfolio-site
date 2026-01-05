@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 if (screen) screen.classList.add('loaded');
                 document.body.style.overflow = 'visible';
-            }, 600);
+            }, 400);
         });
     }
 
