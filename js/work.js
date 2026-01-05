@@ -6,12 +6,12 @@ function toggleLanguage(lang) {
 
     if (lang === 'en') {
         body.classList.add('lang-en-active');
-        if(btnEn) btnEn.classList.add('active');
-        if(btnJa) btnJa.classList.remove('active');
+        if (btnEn) btnEn.classList.add('active');
+        if (btnJa) btnJa.classList.remove('active');
     } else {
         body.classList.remove('lang-en-active');
-        if(btnJa) btnJa.classList.add('active');
-        if(btnEn) btnEn.classList.remove('active');
+        if (btnJa) btnJa.classList.add('active');
+        if (btnEn) btnEn.classList.remove('active');
     }
 }
 
@@ -27,7 +27,6 @@ function scrollCarousel(direction) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Language Init
     const savedLang = localStorage.getItem('preferredLang') || 'ja';
     toggleLanguage(savedLang);
 
@@ -38,8 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const total = 11;
         const nextBtn = document.getElementById('nextWorkBtn');
         const prevBtn = document.getElementById('prevWorkBtn');
-        if(nextBtn) nextBtn.href = `work-${currentNum <= 1 ? total : currentNum - 1}.html`;
-        if(prevBtn) prevBtn.href = `work-${currentNum >= total ? 1 : currentNum + 1}.html`;
+        if (nextBtn) nextBtn.href = `work-${currentNum <= 1 ? total : currentNum - 1}.html`;
+        if (prevBtn) prevBtn.href = `work-${currentNum >= total ? 1 : currentNum + 1}.html`;
     }
 
     const screen = document.getElementById('loading-screen');
@@ -142,22 +141,22 @@ document.addEventListener('DOMContentLoaded', () => {
         if (touchEndX < touchStartX - 50) document.querySelector('.lb-next')?.click();
         if (touchEndX > touchStartX + 50) document.querySelector('.lb-prev')?.click();
     }, {passive: true});
-});
 
-const siteLinks = document.querySelectorAll('.site-link');
-siteLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        if (window.innerWidth <= 768) {
-            const isEn = document.body.classList.contains('lang-en-active');
-            
-            const message = isEn 
-                ? "This site is designed for desktop. It may not display correctly on mobile. Continue?" 
-                : "このサイトはデスクトップ専用設計です。モバイルでは正しく表示されない場合があります。移動しますか？";
+    const siteLinks = document.querySelectorAll('.site-link');
+    siteLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                const isEn = document.body.classList.contains('lang-en-active');
                 
-            const confirmVisit = confirm(message);
-            if (!confirmVisit) {
-                e.preventDefault();
+                const message = isEn 
+                    ? "This site is designed for desktop and may not display correctly on mobile. Continue?" 
+                    : "このサイトはデスクトップ専用設計です。モバイルでは正しく表示されない場合があります。移動しますか？";
+                    
+                const confirmVisit = confirm(message);
+                if (!confirmVisit) {
+                    e.preventDefault();
+                }
             }
-        }
+        });
     });
 });
