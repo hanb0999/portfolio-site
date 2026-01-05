@@ -72,20 +72,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
-function toggleLanguage(lang) {
-    const body = document.body;
-    const btnEn = document.getElementById('btn-en');
-    const btnJa = document.getElementById('btn-ja');
-    localStorage.setItem('preferredLang', lang);
-
-    if (lang === 'en') {
-        body.classList.add('lang-en-active');
-        if(btnEn) btnEn.classList.add('active');
-        if(btnJa) btnJa.classList.remove('active');
-    } else {
-        body.classList.remove('lang-en-active');
-        if(btnJa) btnJa.classList.add('active');
-        if(btnEn) btnEn.classList.remove('active');
-    }
-}
