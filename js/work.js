@@ -45,117 +45,77 @@ document.addEventListener('DOMContentLoaded', () => {
     const bar = document.getElementById('handler-bar');
     const logoFill = document.getElementById('handler-logo-fill');
 
-    const hideLoader = () => {
-        if (screen) screen.classList.add('loaded');
-        document.body.style.overflow = 'visible';
+    const allMedia = Array.from(document.querySelectorAll('.work-visuals img, .work-visuals video, .logo img, .bottom-logo img'));
+    let loadedCount = 0;
+    const totalMedia = allMedia.length;
+
+    const updateProgress = () => {
+        loadedCount++;
+        const progress = (loadedCount / totalMedia) * 100;
+        if (bar) bar.style.width = progress + '%';
+        if (logoFill) logoFill.style.height = progress + '%';
+        if (loadedCount >= totalMedia) setTimeout(hideLoader, 500);
     };
 
-    if (document.readyState === 'complete') {
+    const hideLoader = () => {
+        if (screen && !screen.classList.contains('loaded')) {
+            screen.classList.add('loaded');
+            document.body.style.overflow = 'visible';
+        }
+    };
+
+    if (totalMedia === 0) {
         hideLoader();
     } else {
         document.body.style.overflow = 'hidden';
-        let progress = 0;
-        const interval = setInterval(() => {
-            if (progress < 95) {
-                progress += 2;
-                if (bar) bar.style.width = progress + '%';
-                if (logoFill) logoFill.style.height = progress + '%';
+        allMedia.forEach((media) => {
+            if (media.tagName === 'IMG') {
+                if (media.complete) updateProgress();
+                else { media.addEventListener('load', updateProgress); media.addEventListener('error', updateProgress); }
+            } else if (media.tagName === 'VIDEO') {
+                if (media.readyState >= 2) updateProgress();
+                else { media.addEventListener('loadeddata', updateProgress); media.addEventListener('error', updateProgress); }
             }
-        }, 30);
-
-        window.addEventListener('load', () => {
-            clearInterval(interval);
-            if (bar) bar.style.width = '100%';
-            if (logoFill) logoFill.style.height = '100%';
-            setTimeout(hideLoader, 400);
         });
     }
+    setTimeout(hideLoader, 6000);
 
     const lightbox = document.getElementById('lightbox');
     const lbImg = document.getElementById('lightbox-img');
     const lbVideo = document.getElementById('lightbox-video');
     const lbCaption = document.getElementById('lightbox-caption');
-    
     const mediaElements = Array.from(document.querySelectorAll('.work-grid img, .work3-grid img, .image-box img, .image-box-work img, .image-box-work3 img, .image-box video'));
     let currentIndex = 0;
 
     function updateLightbox() {
         const media = mediaElements[currentIndex];
         if (!media) return;
-        
         const isEn = document.body.classList.contains('lang-en-active');
-        lbImg.style.display = 'none'; 
-        lbVideo.style.display = 'none'; 
-        lbVideo.pause();
-
+        lbImg.style.display = 'none'; lbVideo.style.display = 'none'; lbVideo.pause();
         if (media.tagName === 'VIDEO') {
             const source = media.querySelector('source');
-            if (source) {
-                lbVideo.src = source.src;
-                lbVideo.style.display = 'block'; 
-                lbVideo.play();
-                lbCaption.textContent = isEn ? "Project Video" : "プロジェクト動画";
-            }
+            if (source) { lbVideo.src = source.src; lbVideo.style.display = 'block'; lbVideo.play(); lbCaption.textContent = isEn ? "Project Video" : "プロジェクト動画"; }
         } else {
-            lbImg.src = media.src; 
-            lbImg.style.display = 'block';
+            lbImg.src = media.src; lbImg.style.display = 'block';
             lbCaption.textContent = isEn ? (media.getAttribute('data-en-alt') || media.alt) : media.alt;
         }
     }
 
-    mediaElements.forEach((m, i) => { 
-        m.addEventListener('click', () => { 
-            currentIndex = i; 
-            updateLightbox(); 
-            if (lightbox) lightbox.style.display = 'flex'; 
-        }); 
-    });
+    mediaElements.forEach((m, i) => { m.addEventListener('click', () => { currentIndex = i; updateLightbox(); if (lightbox) lightbox.style.display = 'flex'; }); });
+    document.querySelector('.lb-next')?.addEventListener('click', (e) => { e.stopPropagation(); currentIndex = (currentIndex + 1) % mediaElements.length; updateLightbox(); });
+    document.querySelector('.lb-prev')?.addEventListener('click', (e) => { e.stopPropagation(); currentIndex = (currentIndex - 1 + mediaElements.length) % mediaElements.length; updateLightbox(); });
 
-    document.querySelector('.lb-next')?.addEventListener('click', (e) => { 
-        e.stopPropagation(); 
-        currentIndex = (currentIndex + 1) % mediaElements.length; 
-        updateLightbox(); 
-    });
-
-    document.querySelector('.lb-prev')?.addEventListener('click', (e) => { 
-        e.stopPropagation(); 
-        currentIndex = (currentIndex - 1 + mediaElements.length) % mediaElements.length; 
-        updateLightbox(); 
-    });
-
-    const closeLb = () => {
-        if (lightbox) lightbox.style.display = 'none'; 
-        if (lbVideo) lbVideo.pause();
-    };
-
+    const closeLb = () => { if (lightbox) lightbox.style.display = 'none'; if (lbVideo) lbVideo.pause(); };
     document.querySelector('.close-lightbox')?.addEventListener('click', closeLb);
-    
-    lightbox?.addEventListener('click', (e) => {
-        if (e.target === lightbox) closeLb();
-    });
-
-    let touchStartX = 0;
-    lightbox?.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, {passive: true});
-    lightbox?.addEventListener('touchend', e => { 
-        const touchEndX = e.changedTouches[0].screenX;
-        if (touchEndX < touchStartX - 50) document.querySelector('.lb-next')?.click();
-        if (touchEndX > touchStartX + 50) document.querySelector('.lb-prev')?.click();
-    }, {passive: true});
+    lightbox?.addEventListener('click', (e) => { if (e.target === lightbox) closeLb(); });
 
     const siteLinks = document.querySelectorAll('.site-link');
     siteLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             if (window.innerWidth <= 768) {
                 const isEn = document.body.classList.contains('lang-en-active');
-                
-                const message = isEn 
-                    ? "This site is designed for desktop and may not display correctly on mobile. Continue?" 
-                    : "このサイトはデスクトップ専用設計です。モバイルでは正しく表示されない場合があります。移動しますか？";
-                    
-                const confirmVisit = confirm(message);
-                if (!confirmVisit) {
-                    e.preventDefault();
-                }
+                const message = isEn ? "This site is designed for desktop and may not display correctly on mobile. Continue?" : "このサイトはデスクトップ専用設計です。モバイルでは正しく表示されない場合があります。移動しますか？";
+                if (!confirm(message)) e.preventDefault();
             }
         });
     });
