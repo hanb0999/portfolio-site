@@ -109,6 +109,34 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.close-lightbox')?.addEventListener('click', closeLb);
     lightbox?.addEventListener('click', (e) => { if (e.target === lightbox) closeLb(); });
 
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    lightbox?.addEventListener('touchstart', e => { 
+        touchStartX = e.changedTouches[0].screenX; 
+        touchStartY = e.changedTouches[0].screenY;
+    }, {passive: true});
+
+    lightbox?.addEventListener('touchmove', e => {
+        if (lightbox.style.display === 'flex') {
+        }
+    }, {passive: true});
+
+    lightbox?.addEventListener('touchend', e => { 
+        const touchEndX = e.changedTouches[0].screenX;
+        const touchEndY = e.changedTouches[0].screenY;
+        const diffX = touchEndX - touchStartX;
+        const diffY = touchEndY - touchStartY;
+
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+            if (diffX < 0) {
+                document.querySelector('.lb-next')?.click();
+            } else {
+                document.querySelector('.lb-prev')?.click();
+            }
+        }
+    }, {passive: true});
+
     const siteLinks = document.querySelectorAll('.site-link');
     siteLinks.forEach(link => {
         link.addEventListener('click', (e) => {
