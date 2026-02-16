@@ -131,32 +131,34 @@ function renderProjectPage(data) {
     }
 
     const siteLink = document.querySelector('.site-link');
+    const infoPanel = document.querySelector('.work-info-panel');
+    
     document.querySelector('.mobile-site-note')?.remove(); 
     
     if (siteLink) {
+        // Check if the URL is valid
         if (data.site_url && data.site_url.trim() !== "" && data.site_url !== "#") {
             siteLink.href = data.site_url;
             siteLink.style.display = "block";
             siteLink.innerHTML = `<span class="lang-ja">SITEを見る →</span><span class="lang-en">View Website →</span>`;
             
+            // Popup logic
             siteLink.onclick = (e) => {
                 if (window.innerWidth <= 768) {
-                    const msgJa = "このサイトはデスクトップ表示にのみ対応しています。モバイルでは正しく表示されない可能性があります。移動しますか？";
-                    const msgEn = "This website is optimized for desktop only and may not display correctly on mobile. Do you want to proceed?";
-                    
                     const isEn = document.body.classList.contains('lang-en-active');
-                    const confirmMove = confirm(isEn ? msgEn : msgJa);
+                    const msg = isEn 
+                        ? "This website is optimized for desktop and may not display correctly on mobile. Proceed?" 
+                        : "このサイトはデスクトップ専用に設計されています。モバイルでは正しく表示されない場合があります。移動しますか？";
                     
-                    if (!confirmMove) {
-                        e.preventDefault(); 
-                    }
+                    if (!confirm(msg)) e.preventDefault();
                 }
             };
     
             const note = document.createElement('div');
-            note.className = 'mobile-site-note';
+            note.className = 'mobile-site-note'; 
             note.innerHTML = `<span class="lang-ja">※デスクトップ表示推奨</span><span class="lang-en">※Best viewed on Desktop</span>`;
             siteLink.parentNode.insertBefore(note, siteLink.nextSibling);
+            
         } else {
             siteLink.style.display = "none";
         }
