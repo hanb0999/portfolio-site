@@ -203,7 +203,6 @@ header.scrolled .main-nav a {
     color: #000;
 }
 
-.card-link:nth-child(1) .card-label,
 .card-link:nth-child(3) .card-label,
 .card-link:nth-child(5) .card-label,
 .card-link:nth-child(7) .card-label,
