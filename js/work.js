@@ -228,7 +228,7 @@ function setupLightbox() {
     const lbVideo = document.getElementById('lightbox-video');
     const lbCaption = document.getElementById('lightbox-caption');
     let currentIndex = 0;
-
+    
     const getGalleryItems = () => Array.from(document.querySelectorAll('#project-gallery-grid img, #project-gallery-grid video'));
 
     document.addEventListener('click', (e) => {
@@ -240,6 +240,27 @@ function setupLightbox() {
                 updateLightbox(mediaElements);
                 lightbox.style.display = 'flex';
                 document.body.style.overflow = 'hidden';
+            }
+
+            let touchStartX = 0;
+            let touchEndX = 0;
+        
+            lightbox.addEventListener('touchstart', e => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+        
+            lightbox.addEventListener('touchend', e => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            }, { passive: true });
+            
+            function handleSwipe() {
+                const swipeThreshold = 50; 
+                if (touchEndX < touchStartX - swipeThreshold) {
+                    navigate(1);
+                }
+                if (touchEndX > touchStartX + swipeThreshold) {
+                    navigate(-1);
             }
         }
     });
