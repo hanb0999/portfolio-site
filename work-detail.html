@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Detail</title>
+    <link rel="icon" type="image/png" href="img/favicon.svg">
+    <link rel="apple-touch-icon" href="img/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/work.js"></script>
+</head>
+    <body>
+        <div id="loading-screen">
+            <div class="loader-center-box">
+                <div class="logo-container">
+                    <img src="img/favicon.svg" class="logo-base" alt="">
+                    <div class="logo-fill-wrapper" id="handler-logo-fill">
+                        <img src="img/favicon.svg" class="logo-fill-src" alt="">
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="handler-bar"></div>
+                </div>
+                <div class="loading-text-wrapper">
+                    <p class="loading-text lang-ja">読み込み中</p>
+                    <p class="loading-text lang-en">Loading</p>
+                </div>
+            </div>
+        </div>
+        
+        <header>
+            <h1 class="logo">WORKS</h1> <nav class="main-nav">
+                <a href="index.html#home">HOME</a>
+                <a href="index.html#profile">PROFILE</a>
+                <a href="index.html#works">WORKS</a>
+                <a href="index.html#contacts">CONTACT</a>
+                
+                <div class="lang-switch">
+                    <button onclick="toggleLanguage('ja')" id="btn-ja" class="active">JP</button>
+                    <button onclick="toggleLanguage('en')" id="btn-en">EN</button>
+                </div>
+            </nav>
+        </header>
+
+        <div class="work-detail-wrapper">
+            <div class="work-visuals">
+                <div id="project-gallery-grid"></div>
+
+                <div class="detail-footer-left">
+                    <h3 class="footer-name">BUI HAN</h3>
+                    <a href="mailto:hanbui.c@gmail.com" class="footer-link">hanbui.c<span class="footer-special-at">@</span>gmail.com</a>
+                    <div class="footer-socials">
+                        <a href="https://behance.net/hanbu_i" target="_blank" rel="noopener noreferrer"><img src="./img/behance.png" alt="Behance"></a>
+                        <a href="https://github.com/hanb0999" target="_blank" rel="noopener noreferrer"><img src="./img/github.png" alt="Github"></a>
+                        <a href="https://linkedin.com/in/han-bui09" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png" alt="Linkedin"></a>
+                    </div>
+                    <p class="footer-copy">© 2025 Bui Han</p>
+                </div>
+            </div>
+            
+            <div class="work-info-panel">
+                <h2 class="project-title"></h2>
+
+                <div class="detail-group">
+                    <h3><span class="lang-ja">作品概要</span><span class="lang-en">Project Overview</span></h3>
+                    <ul class="info-list"></ul>
+                </div>
+
+                <div class="detail-group">
+                    <h3><span class="lang-ja">制作年月日</span><span class="lang-en">Production Date</span></h3>
+                    <p></p>
+                </div>
+
+                <div class="detail-group">
+                    <h3><span class="lang-ja">制作担当</span><span class="lang-en">Production Role</span></h3>
+                    <ul class="info-list"></ul>
+                </div>
+
+                <div class="detail-group">
+                    <h3><span class="lang-ja">コンセプト</span><span class="lang-en">Concept</span></h3>
+                    <ul class="info-list"></ul>
+                </div>
+
+                <div class="detail-group">
+                    <h3><span class="lang-ja">工夫点</span><span class="lang-en">Reflections</span></h3>
+                    <ul class="info-list"></ul>
+                </div>
+
+                <div class="detail-group">
+                    <h3><span class="lang-ja">制作環境と使用言語</span><span class="lang-en">Tools & Environment</span></h3>
+                    <p></p>
+                </div>
+
+                <a href="#" class="site-link" target="_blank">
+                    <span class="lang-ja">SITEを見る →</span>
+                    <span class="lang-en">View Website →</span>
+                </a>
+
+                <div class="mini-carousel-wrapper">
+                    <div class="mini-carousel" id="workCarousel">
+                        <a href="work-detail.html?id=11" class="mini-card" style="background-image: url('./img/top/work-11.jpg');"></a>
+                        <a href="work-detail.html?id=10" class="mini-card" style="background-image: url('./img/top/work-10.jpg');"></a>
+                        <a href="work-detail.html?id=9" class="mini-card" style="background-image: url('./img/top/work-9.jpg');"></a>
+                        <a href="work-detail.html?id=8" class="mini-card" style="background-image: url('./img/top/work-8.jpg');"></a>
+                        <a href="work-detail.html?id=7" class="mini-card" style="background-image: url('./img/top/work-7.jpg');"></a>
+                        <a href="work-detail.html?id=6" class="mini-card" style="background-image: url('./img/top/work-6.jpg');"></a>
+                        <a href="work-detail.html?id=5" class="mini-card" style="background-image: url('./img/top/work-5.jpg');"></a>
+                        <a href="work-detail.html?id=4" class="mini-card" style="background-image: url('./img/top/work-4.jpg');"></a>
+                        <a href="work-detail.html?id=3" class="mini-card" style="background-image: url('./img/top/work-3.jpg');"></a>
+                        <a href="work-detail.html?id=2" class="mini-card" style="background-image: url('./img/top/work-2.jpg');"></a>
+                        <a href="work-detail.html?id=1" class="mini-card" style="background-image: url('./img/top/work-1.jpg');"></a>
+                    </div>
+
+                    <div class="carousel-nav-row">
+                        <a href="#" id="prevWorkBtn" class="prev-work-text">
+                            <span class="lang-ja">←前の作品</span><span class="lang-en">← Prev</span>
+                        </a>
+                        <div class="arrow-wrapper">
+                            <button class="carousel-arrow" onclick="scrollCarousel(-1)">&#8249;</button>
+                            <button class="carousel-arrow" onclick="scrollCarousel(1)">&#8250;</button>
+                        </div>
+                        <a href="#" id="nextWorkBtn" class="next-work-text">
+                            <span class="lang-ja">次の作品→</span><span class="lang-en">Next →</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bottom-logo">
+                    <img src="./img/name-logo.svg" alt="Bui Han Logo">
+                </div>
+            </div>
+        </div>
+
+        <div id="lightbox" class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <button class="lb-arrow lb-prev">&#8249;</button>
+            <div class="lb-container">
+                <video id="lightbox-video" controls playsinline style="display: none;"></video>
+                <img id="lightbox-img" src="" alt="">
+                <div id="lightbox-caption" class="lightbox-caption"></div>
+            </div>
+            <button class="lb-arrow lb-next">&#8250;</button>
+        </div>
+    </body>
+</html>

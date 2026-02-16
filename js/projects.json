@@ -1,0 +1,729 @@
+[
+    {
+        "id": 1,
+        "slug": "work-1",
+        "title_en": "ILLUSTRATIONS",
+        "title_ja": "ILLUSTRATIONS",
+        "date_en": "2020 — 2023",
+        "date_ja": "2020年 〜 2023年",
+        "tools_en": "Procreate (iPad)",
+        "tools_ja": "Procreate",
+        "overview_en": [
+        "A series of illustration works created during university while staying in Vietnam due to the pandemic.",
+        "Produced to improve expressive skills under restrictions on creative activities.",
+        "Focused on digital illustration created using an iPad and Procreate.",
+        "Mainly consists of monochrome line drawings.",
+        "Includes many tattoo designs created for friends and family."
+        ],
+        "overview_ja": [
+        "大学在学中、コロナ禍でベトナムへ帰国していた期間に制作したイラスト作品群",
+        "外出や制作活動が制限される状況の中で、表現力向上を目的として制作",
+        "iPadとProcreateを使用したデジタルイラスト制作に取り組んだ",
+        "主にモノクロの線画イラストを中心に制作",
+        "友人や家族のために描いたタトゥーデザインも多く含まれている"
+        ],
+        "role_en": [
+        "Handled all illustration production independently.",
+        "Studied drawing methods and expressive techniques by researching online works.",
+        "Continued creating works through repeated trial and error."
+        ],
+        "role_ja": [
+        "すべてのイラスト制作を一人で担当",
+        "オンライン上の作品を参考に、描き方や表現技法を研究",
+        "試行錯誤を重ねながら、継続的に制作を行った"
+        ],
+        "concept_en": [
+        "Visual expressions primarily influenced by anime and retro art.",
+        "Focused on line art, emphasizing line quality and composition.",
+        "Experimented with semi-realistic color illustrations based on K-POP idols.",
+        "Expanded range by exploring both monochrome and color expressions."
+        ],
+        "concept_ja": [
+        "アニメやレトロアートから影響を受けたビジュアル表現を中心に制作",
+        "線の表情や構成を意識した線画イラストに注力",
+        "K-POPアイドルの写真を参考に、セミリアル調のカラーイラストにも挑戦",
+        "モノクロ表現とカラー表現の両方を試しながら、表現の幅を広げることを意識"
+        ],
+        "reflections_en": [
+        "Realized the challenges of establishing an original artistic style.",
+        "Recognized instances of heavy influence from reference pieces.",
+        "Future Goal: Create original characters and unique recurring motifs."
+        ],
+        "reflections_ja": [
+        "オリジナルの作風を確立することの難しさを実感",
+        "学習のために参考にした作品の影響を強く受けてしまう場面があった",
+        "今後の課題：オリジナルキャラクターや独自のモチーフの制作"
+        ],
+        "images": [
+        { "src": "./img/works/art-1.jpg", "alt_ja": "伊藤潤二『富江』をモチーフにした再構築作品。腕のタトゥーやスパークルでアレンジ。", "alt_en": "A reconstructed artwork inspired by Junji Ito’s Tomie requested by a friend, arranged with arm tattoos and sparkles." },
+        { "src": "./img/works/art-2.jpg", "alt_ja": "弟からの依頼で制作した、姪を描いたレトロ調イラスト", "alt_en": "A retro-style illustration of my niece, created at the request of my younger brother." },
+        { "src": "./img/works/art-3.jpg", "alt_ja": "姪をモチーフにした別タッチのイラスト：いたずらっぽい表情", "alt_en": "An illustration of my niece in a different style, featuring a mischievous expression." },
+        { "src": "./img/works/art-4.jpg", "alt_ja": "姪をモチーフにした別タッチのイラスト：怒った表情を表現", "alt_en": "Another illustration of my niece in a different style, expressing an angry emotion." },
+        { "src": "./img/works/art-5.PNG", "alt_ja": "グランジ感のある砂時計をテーマにしたタトゥーデザイン。", "alt_en": "A tattoo design themed around a grunge-style hourglass." },
+        { "src": "./img/works/art-6.PNG", "alt_ja": "砂時計と繋がるタトゥーデザイン。『ドロヘドロ』心に着想を得たハートモチーフ。", "alt_en": "A tattoo design connected to the hourglass, featuring a heart motif inspired by Dorohedoro." },
+        { "src": "./img/works/art-7.jpg", "alt_ja": "SEVENTEEN HOSHI ファンアート", "alt_en": "SEVENTEEN HOSHI fan art" },
+        { "src": "./img/works/art-8.jpg", "alt_ja": "PLAVE ファンアート", "alt_en": "PLAVE fan art" }
+        ]
+    },
+    {
+        "id": 2,
+        "slug": "work-2",
+        "title_en": "SCITIC LOGO",
+        "title_ja": "SCITIC LOGO",
+        "date_en": "July 20, 2022",
+        "date_ja": "2022年07月20日",
+        "tools_en": "Illustrator / Blender",
+        "tools_ja": "Illustrator / Blender",
+        "overview_en": [
+        "Logo design for a client launching a 3D-printed nail kit business.",
+        "Created to establish the brand's first impression during launch.",
+        "Produced both static logo and animation for usage context."
+        ],
+        "overview_ja": [
+        "3Dプリントによるネイルボックス事業のロゴデザイン依頼",
+        "ブランドの第一印象となるロゴ制作を目的として制作",
+        "ロゴ単体だけでなく、ロゴアニメーションの制作にも取り組んだ"
+        ],
+        "role_en": [
+        "Logo design planning & production",
+        "Logo animation production",
+        "Client consultation and feedback integration"
+        ],
+        "role_ja": [
+        "ロゴデザインの企画・制作",
+        "ロゴアニメーション制作",
+        "クライアントとのヒアリングおよび要望の反映"
+        ],
+        "concept_en": [
+        "Proposed a 3D aesthetic to reflect 3D-printed product focus.",
+        "Learned Blender from scratch for modeling and animation.",
+        "Initial Proposal: Monochrome design focusing strictly on form.",
+        "Refinement Phase: Adopted a chrome-style finish.",
+        "Final Version: 3D logo animation with a sky background."
+        ],
+        "concept_ja": [
+        "3Dプリント特性を踏まえ、立体感のあるロゴ表現を提案",
+        "Blenderの操作を新たに学習し、モデリングとアニメーションに挑戦",
+        "初期提案：形状を重視したモノクロデザイン",
+        "改善フェーズ：クローム調のエフェクトを採用",
+        "最終形：空を背景にしたモダンな3Dアニメーション"
+        ],
+        "reflections_en": [
+        "Gained valuable experience iterating based on direct client feedback.",
+        "Future Challenge: Proposing realistic mockups with products.",
+        "Future Challenge: Simulating contexts of use visually."
+        ],
+        "reflections_ja": [
+        "クライアントと直接やり取りし、改善を重ねた貴重な経験",
+        "今後の課題：ネイルが入った状態のリアルなモックアップ提案",
+        "今後の課題：商品の使用シーンを想定したビジュアル提案"
+        ],
+        "images": [
+        { "src": "./img/works/3d-logo.gif", "alt_ja": "ロゴアニメーション", "alt_en": "3D Logo Animation" },
+        { "src": "./img/works/logo.jpg", "alt_ja": "ロゴデザイン", "alt_en": "Logo Design" },
+        { "src": "./img/works/embossed.png", "alt_ja": "エンボス加工イメージ", "alt_en": "Logo embossing concept (Nail kit packaging)" }
+        ]
+    },
+    {
+        "id": 3,
+        "slug": "work-3",
+        "title_en": "SELF-INTRO CARD",
+        "title_ja": "自己紹介カード",
+        "date_en": "May 14, 2025",
+        "date_ja": "2025年05月14日",
+        "tools_en": "Illustrator",
+        "tools_ja": "Illustrator",
+        "overview_en": [
+        "A poster project created as an assignment to develop a catchphrase and visuals based on self-analysis.",
+        "Extracted five adjectives through self-reflection: Optimistic, Detail-oriented, Meticulous, Considerate, Emotional.",
+        "Aimed for a memorable design memorability suitable for Instagram Stories.",
+        "Catchphrase: 'Warmth to people, kindness is the medium'"
+        ],
+        "overview_ja": [
+        "自己分析をもとに、キャッチコピーとビジュアルを制作する課題として取り組んだポスター作品",
+        "自身の性格から抽出した5つの形容詞：楽天的、こだわりがある、几帳面、気が利く、感情的",
+        "Instagramのストーリー上でも印象に残るポスター表現を目指した",
+        "キャッチコピー：「人に温かみ、思いやりが媒体」"
+        ],
+        "role_en": [
+        "Self-analysis",
+        "Copywriting (Adjectives & Catchphrase)",
+        "Poster design and layout",
+        "Color palette and typography selection"
+        ],
+        "role_ja": [
+        "自己分析",
+        "形容詞・キャッチコピーの考案",
+        "ポスターデザイン制作",
+        "配色・書体選定"
+        ],
+        "concept_en": [
+        "Inspired by the keyword 'Warmth', using a thermometer as the central visual element.",
+        "Contrast between bright pink (warmth) and cool blue (cold) to represent temperature.",
+        "Incorporated frosted glass texture and transparency into typography."
+        ],
+        "concept_ja": [
+        "キーワード「温かみ」から着想。温度計をメインビジュアルに採用",
+        "明るいピンク（暖かさ）とクールなブルー（冷たさ）で温度のコントラストを設計",
+        "フロストガラス風のテクスチャと透明感を文字表現に取り入れた"
+        ],
+        "reflections_en": [
+        "Challenge: Typography impact is low due to a composition that is too simple.",
+        "Future Improvement: Adjusting font sizes and strategic placement.",
+        "Future Improvement: Creating a layout focused on visual flow (eye-tracking)."
+        ],
+        "reflections_ja": [
+        "全体構成がシンプルになりすぎ、タイポグラフィが目立っていない点が課題",
+        "今後の改善点：文字サイズの調整と配置の工夫",
+        "今後の改善点：視線誘導を意識したレイアウト"
+        ],
+        "images": [
+        { "src": "./img/works/shoukai-card.png", "alt_ja": "自己紹介ポスター：温度計をモチーフにしたデザイン", "alt_en": "Self-introduction poster: Design featuring a thermometer motif" }
+        ]
+    },
+    {
+    "id": 4,
+    "slug": "work-4",
+    "title_en": "MOVIE SITE",
+    "title_ja": "MOVIE SITE",
+    "date_en": "June 25, 2025",
+    "date_ja": "2025年06月25日",
+    "tools_en": "HTML / CSS3 / JavaScript / Photoshop",
+    "tools_ja": "HTML / CSS3 / JavaScript / Photoshop",
+    "site_url": "https://hanb0999.github.io/movie-site/",
+    "overview_en": [
+        "A website created as an assignment focused on movie site design.",
+        "Designed with a required navigation structure: HOME, STORY, CHARACTER, and CAST.",
+        "Reconstructed the visuals and layout to match the aesthetic of the film 'The Grand Budapest Hotel'."
+    ],
+    "overview_ja": [
+        "映画サイト制作をテーマとした課題として制作したWebサイト",
+        "ナビゲーション構成「HOME / STORY / CHARACTER / CAST」を必須要件として設計",
+        "映画『The Grand Budapest Hotel』の世界観に合うよう、ビジュアル・配色・レイアウトを再構成"
+    ],
+    "role_en": [
+        "Responsible for all design and coding.",
+        "Processed and adjusted visual assets to ensure a unified tone and composition."
+    ],
+    "role_ja": [
+        "デザインおよびコーディングをすべて担当",
+        "全体のトーンや構図の統一を意識した素材の加工・調整"
+    ],
+    "concept_en": [
+        "Adopted the film's iconic pastel pink and orange as the primary color scheme.",
+        "Used darker backgrounds for 'STORY' and 'CHARACTER' pages to contrast with bright tones."
+    ],
+    "concept_ja": [
+        "映画の象徴的なパステルピンクとイエローをメインカラーに採用",
+        "「STORY」「CHARACTER」では夜のシーンを意識した暗めの背景を使用し、コントラストを演出"
+    ],
+    "reflections_en": [
+        "Implemented a character page feature where clicking an image reveals text.",
+        "Created a hover effect on the 'CAST' page switching character art to actor photos.",
+        "Lesson learned: Importance of balancing visual flair with usability."
+    ],
+    "reflections_ja": [
+        "「CHARACTER」ページ：画像クリックでテキストが表示される演出を実装",
+        "「CAST」ページ：ホバー時にキャラクターから実在の俳優写真へ切り替わる表現",
+        "課題：演出だけでなく、ユーザビリティや目的との整合性を考慮する重要性を学んだ"
+    ],
+    "main_video": "./img/works/movie.mp4",
+    "images": [
+        {
+        "src": "./img/works/movie-site.png",
+        "alt_ja": "映画サイトのデザインプレビュー",
+        "alt_en": "Movie site design preview"
+        }
+    ]
+    },
+    {
+    "id": 5,
+    "slug": "work-5",
+    "title_en": "COCOON TOWER",
+    "title_ja": "COCOON TOWER",
+    "date_en": "July 12, 2025",
+    "date_ja": "2025年07月12日",
+    "tools_en": "HTML / CSS3 / JavaScript / Photoshop / Figma",
+    "tools_ja": "HTML / CSS3 / JavaScript / Photoshop / Figma",
+    "site_url": "https://hanb0999.github.io/cocoon-tower-site/",
+    "overview_en": [
+        "A group project focused on creating a website about the Mode Gakuen Cocoon Tower.",
+        "Conducted field research to analyze the building's design, coloring, and architectural concept.",
+        "Planned as a practical resource for HAL Tokyo students, moving beyond a simple introduction."
+    ],
+    "overview_ja": [
+        "グループ制作課題「コクーンタワーサイト制作」として取り組んだWebサイト",
+        "取材を通じ、建物の見せ方やデザイン、コンセプトについてチームで検討",
+        "HAL東京の学生にとって実用性のある情報を盛り込んだサイトを目指して企画"
+    ],
+    "role_en": [
+        "Overall UI/UX and web design.",
+        "Visual concept development and layout design.",
+        "Took on the lead role mid-project to oversee and unify the design direction."
+    ],
+    "role_ja": [
+        "Webサイト全体のデザイン設計（UI/UX）",
+        "ビジュアルコンセプトの立案、レイアウト設計",
+        "制作途中で実質的なリーダーとしてデザインを統括"
+    ],
+    "concept_en": [
+        "Addressing the issue: 'The building is iconic, but navigating to classrooms is confusing.'",
+        "Developed navigation elements to guide users through complex elevator stops.",
+        "Used classroom door windows as a recurring visual motif to emphasize the triangular structure."
+    ],
+    "concept_ja": [
+        "「建物は印象的だが、教室までの移動が分かりづらい」という学生の課題を解決",
+        "教室までの複雑な動線を考慮し、ナビゲーション要素を備えたサイトを構築",
+        "建物の象徴である三角形の構造を強調するため、教室ドアの窓をモチーフに採用"
+    ],
+    "reflections_en": [
+        "Focused on balancing information architecture with high-impact visual expression.",
+        "Future goal: Create interactive 'learning-by-doing' experiences rather than passive viewing."
+    ],
+    "reflections_ja": [
+        "情報設計とビジュアル表現を中心に制作を進行",
+        "今後は「見る」だけでなく「体験しながら学べる」体験設計にも挑戦したい"
+    ],
+    "main_video": "./img/works/cocoon.mp4",
+    "images": [
+        {
+        "src": "./img/works/cocoon.jpg",
+        "alt_ja": "コクーンタワーサイトのメインビジュアル",
+        "alt_en": "Cocoon Tower site main visual"
+        }
+    ]
+    },
+    {
+    "id": 6,
+    "slug": "work-6",
+    "title_en": "ARTIST SITE",
+    "title_ja": "ARTIST SITE",
+    "date_en": "September 9, 2025",
+    "date_ja": "2025年09月09日",
+    "tools_en": "HTML / CSS3 / JavaScript / Illustrator / Photoshop / Premiere Pro",
+    "tools_ja": "HTML / CSS3 / JavaScript / Illustrator / Photoshop / Premiere Pro",
+    "site_url": "https://hanb0999.github.io/seventeen-site/",
+    "overview_en": [
+        "Designed an official-style artist website for the K-POP group 'SEVENTEEN.'",
+        "Engineered a comprehensive 5-page structure including Top Page, News, Biography, Discography, and Special pages.",
+        "Awarded the 'Best Structure Award' at the HAL 3-school joint contest (Tokyo, Osaka, Nagoya)."
+    ],
+    "overview_ja": [
+        "K-POPグループ「SEVENTEEN」を題材に、公式アーティストサイトを想定して制作",
+        "トップページ、ニュース、バイオグラフィ、ディスコグラフィ、スペシャルの全5ページ構成を設計",
+        "HAL東京・大阪・名古屋の3校合同コンテストにて「構成力賞」を受賞"
+    ],
+    "role_en": [
+        "Responsible for all design and coding.",
+        "Produced and edited the opening video for the landing page."
+    ],
+    "role_ja": [
+        "デザイン設計からコーディングまでをすべて担当",
+        "サイトオープニング用動画の編集"
+    ],
+    "concept_en": [
+        "Developed a cool, grunge-inspired visual identity based on the group's latest comeback concept.",
+        "Used light blue as the primary color to emphasize a 'cool' aesthetic, while respecting fandom colors.",
+        "Designed an intuitive onboarding experience that uses video to instantly communicate current activities."
+    ],
+    "concept_ja": [
+        "最新カムバックの世界観を軸に、クールでグランジ感のあるビジュアルを設計",
+        "ファンダムカラーを用いつつつ、かっこよさを重視したライトブルーをメインに採用",
+        "実運用を想定し、初見ユーザーにも現在の活動が直感的に伝わる導入を設計"
+    ],
+    "reflections_en": [
+        "While the structure was highly rated, expanding on interaction design remains a future goal.",
+        "Aim to explore immersive features like fan-engagement mini-games and membership systems."
+    ],
+    "reflections_ja": [
+        "構成を評価された一方、インタラクション面での発展が今後の課題",
+        "今後はミニゲームやログイン機能など、没入感のある体験設計に取り組みたい"
+    ],
+    "main_video": "./img/works/seventeen-top.mp4",
+    "images": [
+        {
+        "src": "./img/works/seventeen-site.png",
+        "alt_ja": "SEVENTEEN アーティストサイトのプレビュー",
+        "alt_en": "SEVENTEEN artist site preview"
+        }
+    ]
+    },
+    {
+    "id": 7,
+    "slug": "work-7",
+    "title_en": "CUP DE AROMA",
+    "title_ja": "CUP DE AROMA",
+    "date_en": "September 30, 2025",
+    "date_ja": "2025年09月30日",
+    "tools_en": "Illustrator / Photoshop",
+    "tools_ja": "Illustrator / Photoshop",
+    "overview_en": [
+        "A group ideation exercise conducted for an 'Ideathon' course assignment.",
+        "Based on the theme 'New Cup Noodles,' we brainstormed 40 keywords and generated 20 product ideas.",
+        "Selected 'Aroma Oil that captures the scent of Cup Noodles' as the final concept for its uniqueness."
+    ],
+    "overview_ja": [
+        "「アイデアソン」の授業課題として行った、グループワークによる企画・発想演習",
+        "テーマ「新しいカップ麺」をもとに、計40個のキーワードから20案のアイデアを創出",
+        "最終案として、カップ麺の香りを楽しむ「アロマオイル」という斬新な企画を採用"
+    ],
+    "role_en": [
+        "Discussion record and note-taking.",
+        "Visual design and layout for the entire presentation deck.",
+        "Character and product illustration."
+    ],
+    "role_ja": [
+        "ディスカッションの記録および書記",
+        "プレゼンテーション資料のビジュアルデザイン全般",
+        "コンセプトに基づいたイラスト制作"
+    ],
+    "concept_en": [
+        "A high-impact visual style reflecting the playful nature of the team name, 'Ultra-Men'.",
+        "Used the iconic red and yellow palette as a design homage to the Cup Noodle brand.",
+        "Created brand consistency with the name 'Cup de Aroma' to echo the original branding."
+    ],
+    "concept_ja": [
+        "チーム名「ウルトラ麺」の遊び心を活かした、インパクトのあるビジュアル表現",
+        "誰もが想起するカップヌードルの赤と黄色をメインカラーに、既存デザインをオマージュ",
+        "「Cup de Aroma」という、本家を彷彿とさせるネーミングで企画全体に統一感を創出"
+    ],
+    "reflections_en": [
+        "As I handled the visuals solo, the final result leaned toward homage rather than pure originality.",
+        "I aim to collaborate more deeply on design sharing with teammates for more multifaceted outcomes."
+    ],
+    "reflections_ja": [
+        "ビジュアルを一人で担当したため、独創性よりもオマージュ寄りの表現になった点が反省点",
+        "今後はチーム全員でデザインを共有し、より多角的な表現を目指したい"
+    ],
+    "images": [
+        { "src": "./img/works/cup-1.png", "alt_ja": "チーム名・メンバー紹介", "alt_en": "Team Name & Member Introduction" },
+        { "src": "./img/works/cup-2.png", "alt_ja": "アイディアの発想経緯", "alt_en": "Idea Ideation & Brainstorming Process" },
+        { "src": "./img/works/cup-3.png", "alt_ja": "プロダクト名", "alt_en": "Product Name Reveal" },
+        { "src": "./img/works/cup-4.png", "alt_ja": "プロダクトビジュアル", "alt_en": "Product Visual Mockup" },
+        { "src": "./img/works/cup-5.png", "alt_ja": "プロダクトの特徴", "alt_en": "Product Features" },
+        { "src": "./img/works/cup-6.png", "alt_ja": "ペルソナ設定１", "alt_en": "User Persona Setting (Target Audience)" },
+        { "src": "./img/works/cup-7.png", "alt_ja": "ペルソナ設定２", "alt_en": "User Persona (Context of Use)" },
+        { "src": "./img/works/cup-8.png", "alt_ja": "社会的インパクト・世の中への影響", "alt_en": "Social Impact & Market Influence" },
+        { "src": "./img/works/cup-9.png", "alt_ja": "結び", "alt_en": "Closing Slide" }
+    ]
+    },
+    {
+    "id": 8,
+    "slug": "work-8",
+    "title_en": "COLT 2025 HALLOWEEN",
+    "title_ja": "COLT 2025 HALLOWEEN",
+    "date_en": "October 19, 2025",
+    "date_ja": "2025年10月19日",
+    "tools_en": "Illustrator / Photoshop",
+    "tools_ja": "Illustrator / Photoshop",
+    "overview_en": [
+        "Commissioned to design event posters for a Halloween party at 'Colt,' a global telecommunications company.",
+        "Created a kid-friendly visual style for an event attended by employees and their families.",
+        "Project included posters, photobooth start screens, and physical photo frames.",
+        "Refined designs based on direct feedback from the client's internal team."
+    ],
+    "overview_ja": [
+        "親しい友人が勤務している企業「Colt」にて開催されるハロウィンパーティーの告知用ポスター制作",
+        "家族や子どもも参加するイベントであったため、親しみやすさと楽しさを重視",
+        "ポスターに加え、フォトブース用スタート画面およびフレームデザインも担当",
+        "実際に勤務するチームからのフィードバックを反映しながらデザインをブラッシュアップ"
+    ],
+    "role_en": [
+        "Overall illustration and graphic design.",
+        "Incorporated actual event activities (witch hat games, cotton candy machines) into the illustrations."
+    ],
+    "role_ja": [
+        "イラスト制作およびデザイン全般を担当",
+        "「魔女の帽子ゲーム」や「わたあめ機」など実際の企画要素をイラストに反映"
+    ],
+    "concept_en": [
+        "Balanced a 'cute and fun' aesthetic with a 'spooky Halloween' atmosphere.",
+        "Created approachable characters inspired by children's storybooks.",
+        "Used neon-bright colors against a dark background for strong contrast and visibility."
+    ],
+    "concept_ja": [
+        "「可愛らしくて楽しい」と「少し不気味なハロウィンらしさ」の両立を目指した",
+        "子ども向け絵本から着想を得た、親しみやすいタッチのキャラクター制作",
+        "暗めの背景にネオンのような明るい配色を採用し、高いコントラストと視認性を実現"
+    ],
+    "reflections_en": [
+        "Optimized the photobooth start screen by selecting a yellow-based theme for best visibility.",
+        "Applied careful gradients to maintain a unified tone that felt festive without becoming overly bright."
+    ],
+    "reflections_ja": [
+        "スタート画面において情報量と色数を整理し、黄色を基調とした案が採用された",
+        "グラデーションを取り入れ、明るくなりすぎない統一感のある配色を追求"
+    ],
+    "images": [
+        { "src": "./img/works/halloween-1.jpg", "alt_ja": "ポスター１のデザイン", "alt_en": "Poster 1 design" },
+        { "src": "./img/works/halloween-2.jpg", "alt_ja": "ポスター２のデザイン", "alt_en": "Poster 2 design" },
+        { "src": "./img/works/halloween-startscreen.jpg", "alt_ja": "フォトブース用スタート画面のデザイン", "alt_en": "Photobooth start screen design" },
+        { "src": "./img/works/halloween-frame.jpg", "alt_ja": "フォトフレームのデザイン", "alt_en": "Photo frame design" },
+        { "src": "./img/works/startscreen-irl.jpeg", "alt_ja": "会場でのスタート画面設置イメージ", "alt_en": "Start screen as installed at the event venue" },
+        { "src": "./img/works/photoframes-irl.jpeg", "alt_ja": "実際に印刷されたフォトフレーム", "alt_en": "The final printed photo frames in use" }
+    ]
+    },
+    {
+    "id": 9,
+    "slug": "work-9",
+    "title_en": "Cafe de PARIS",
+    "title_ja": "Cafe de PARIS",
+    "date_en": "November 27, 2025",
+    "date_ja": "2025年11月27日",
+    "tools_en": "HTML / CSS3 / JavaScript / Illustrator / Photoshop / Figma",
+    "tools_ja": "HTML / CSS3 / JavaScript / Illustrator / Photoshop / Figma",
+    "site_url": "https://hanb0999.github.io/Cafe-de-PARIS/",
+    "overview_en": [
+        "A design and coding project focused on creating a landing page for the fictional 'Cafe de PARIS.'",
+        "Designed to transition a print-based brand to the web, focusing on brand awareness.",
+        "Emphasized visual storytelling to communicate the café's unique atmosphere."
+    ],
+    "overview_ja": [
+        "「Cafe de PARIS」のWebサイトTOPページ制作を目的としたデザイン・コーディング課題",
+        "既存の紙媒体広告からWebへ展開する設定を踏まえ、認知度向上と集客を意識した構成",
+        "店舗の雰囲気や世界観が直感的に伝わるビジュアルを重視"
+    ],
+    "role_en": [
+        "Handled the entire workflow from wireframing and design comps to final coding.",
+        "Used Figma for information architecture and structural layout design.",
+        "Created original character illustrations themed around a Parisian café using Illustrator."
+    ],
+    "role_ja": [
+        "ワイヤーフレーム制作、デザインカンプ作成、コーディングを一貫して担当",
+        "Figmaを使用した情報整理および全体構成の設計",
+        "Illustratorによるパリのカフェをテーマにしたオリジナルキャラクターの制作"
+    ],
+    "concept_en": [
+        "Designed around a client brief requesting a 'stylish, bright, and approachable' image.",
+        "Targeted women in their 20s and 30s using friendly and charming visual expressions.",
+        "Integrated a gamified 'Gacha-style' interaction to spark interest in the brand."
+    ],
+    "concept_ja": [
+        "「おしゃれで明るく、身近なイメージ」を要望するクライアント設定を軸に設計",
+        "20代〜30代の女性層をターゲットとし、親しみやすく可愛らしい表現を採用",
+        "ガチャ風のミニゲーム要素を取り入れ、キャラクターやサイトへの興味を喚起"
+    ],
+    "reflections_en": [
+        "Learned the importance of balancing creative expression with business functional goals.",
+        "Moving forward, I aim to focus on designs that harmonize aesthetic appeal with real-world usability."
+    ],
+    "reflections_ja": [
+        "「世界観が作り込まれている」と評価された一方、実用性に関する課題も認識",
+        "業態や目的に応じた「表現力と実用性のバランス」の重要性を学んだ",
+        "今後はより実用的なWebデザインの提案を意識していきたい"
+    ],
+    "main_video": "./img/works/cafe-vid.mp4",
+    "images": [
+        {
+        "src": "./img/works/cafe-designcomp.svg",
+        "alt_ja": "Cafe de PARIS デザインカンプ",
+        "alt_en": "Cafe de PARIS design comp"
+        }
+    ]
+    },
+    {
+    "id": 10,
+    "slug": "work-10",
+    "title_en": "Boulangerie HAL",
+    "title_ja": "Boulangerie HAL",
+    "date_en": "December 31, 2025",
+    "date_ja": "2025年12月31日",
+    "tools_en": "HTML / CSS3 / JavaScript / Illustrator / Photoshop / Figma",
+    "tools_ja": "HTML / CSS3 / JavaScript / Illustrator / Photoshop / Figma",
+    "site_url": "https://hanb0999.github.io/boulangerie-site/",
+    "overview_en": [
+        "A website renewal project for 'Boulangerie HAL' involving design and coding.",
+        "Redesigned the landing page to enhance usability, information clarity, and visual appeal.",
+        "Focused on information hierarchy and layout architecture suitable for a real-world bakery business."
+    ],
+    "overview_ja": [
+        "「Boulangerie HAL」のWebサイトリニューアルをテーマとしたデザイン・コーディング課題",
+        "使いやすさ・情報の分かりやすさ・視覚的な魅力の向上を目的にTOPページを再設計",
+        "実在店舗のサイトリニューアルを想定し、情報整理とレイアウト設計を追求"
+    ],
+    "role_en": [
+        "Created high-fidelity design comps using Figma.",
+        "Front-end coding using HTML, CSS, and JavaScript.",
+        "Responsible for the entire process from planning to implementation."
+    ],
+    "role_ja": [
+        "Figmaを使用したデザインカンプの作成",
+        "HTML・CSS・JavaScriptによるコーディング",
+        "企画から実装までを一貫して担当"
+    ],
+    "concept_en": [
+        "Prioritized the balance between aesthetic appeal and utility for intuitive information delivery.",
+        "Combined bright beige tones to express the warm and friendly atmosphere of a bakery.",
+        "Paired serif and sans-serif fonts to create a light, modern typographic feel."
+    ],
+    "concept_ja": [
+        "デザイン性と実用性のバランスを重視し、必要な情報が直感的に伝わる構成を目指した",
+        "ベージュ系の明るい色を組み合わせ、パン屋らしい温かみのある印象を表現",
+        "セリフ体とサンセリフ体を組み合わせ、重くなりすぎない軽やかなタイポグラフィを採用"
+    ],
+    "reflections_en": [
+        "Pivoted from an overly decorative style to a clean design that prioritizes readability.",
+        "Implemented subtle, elegant JavaScript animations that complement the brand identity.",
+        "Achieved an immersive feel closer to a commercial site through carefully timed transitions."
+    ],
+    "reflections_ja": [
+        "装飾過多を避け、情報の見やすさを最優先にしたシンプルなデザインへ方向転換",
+        "JavaScriptを用い、パン屋の世界観に合う上品で控えめなアニメーションに挑戦",
+        "静的なサイトより、実在のベーカリーに近い没入感のある表現を実現"
+    ],
+    "main_video": "./img/works/boulangerie-vid.mp4",
+    "images": [
+        {
+        "src": "./img/works/boulangerie-designcomp.png",
+        "alt_ja": "Boulangerie HAL デザインカンプ",
+        "alt_en": "Boulangerie HAL design comp"
+        }
+    ]
+    },
+    {
+    "id": 11,
+    "slug": "work-11",
+    "title_en": "HAT A GOOD DAY",
+    "title_ja": "HAT A GOOD DAY",
+    "date_en": "February 06, 2026",
+    "date_ja": "2026年02月06日",
+    "tools_en": "HTML / CSS3 / JavaScript / JSON / Illustrator / Photoshop / Figma",
+    "tools_ja": "HTML / CSS3 / JavaScript / JSON/ Illustrator / Photoshop / Figma",
+    "site_url": "https://hat-a-good-day.web.app",
+    "overview_en": [
+        "This website was created as a hat dictionary and digital archive, providing information on 15 fundamental hat styles that have shaped modern street fashion.",
+        "The site includes a “Daily Select” feature that recommends a hat based on the user’s fashion style and the weather. It also features a search function for easy navigation.",
+        "All content is managed using JSON, with future expansion in mind to allow additional hat entries to be added efficiently."
+    ],
+    "overview_ja": [
+        "本サイトは、現代のストリートファッションに影響を与えた15種類の基本的な帽子を紹介する「帽子辞典／デジタルアーカイブ」として制作しました。",
+        "ユーザーのファッションスタイルや天候に応じて帽子を提案する「Daily Select」機能を実装しています。また、検索機能も搭載し、スムーズに情報へアクセスできる構成としました。",
+        "すべてのデータはJSONで管理しており、将来的に帽子の種類を追加しやすい設計にしています。"
+    ],
+    "role_en": [
+        "Planned and designed the layout and structure in Figma",
+        "Front-end coding using HTML, CSS, JavaScript, and JSON"
+    ],
+    "role_ja": [
+        "Figmaで全体設計およびUIデザインを制作",
+        "HTML・CSS・JavaScript・JSONによるコーディング"
+    ],
+    "concept_en": [
+        "A digital archive style focused on clarity and accessibility — easy to find, easy to read, and easy to learn",
+        "Emphasizing the hat as the final impactful accessory that completes an outfit"
+    ],
+    "concept_ja": [
+        "分かりやすく探しやすいデジタルアーカイブスタイル",
+        "コーディネートを完成させる最後のインパクトあるアクセサリーとしての「帽子」に着目"
+    ],
+    "reflections_en": [
+        "Interactive JavaScript effects, such as hats reacting to mouse scroll and the paint animation in the logo, add playfulness and make the page enjoyable to explore",
+        "In the future, I would like to implement a community feature where hat enthusiasts can upload photos of their own styles",
+        "I also plan to add a contact page where users can suggest hat types or information they would like to see included"
+    ],
+    "reflections_ja": [
+        "マウススクロールに反応する帽子の動きや、ロゴのペイントアニメーションなどのJavaScript演出により、楽しく閲覧できるサイトに仕上げました",
+        "今後は、帽子好きのユーザーが自身のコーディネート写真を投稿できるコミュニティ機能を追加したいと考えています",
+        "また、掲載してほしい帽子情報を提案できるお問い合わせページの実装も検討しています"
+    ],
+    "main_video": "./img/works/hat-vid.mp4",
+    "images": [
+        {
+        "src": "./img/works/hat-designcomp.png",
+        "alt_ja": "HAT A GOOD DAY トップページデザインカンプ",
+        "alt_en": "HAT A GOOD DAY top page design comp"
+        },
+        {
+        "src": "./img/works/hat-archive.png",
+        "alt_ja": "アーカイブページのデザインカンプ",
+        "alt_en": "Archive page design comp"
+        },
+        {
+        "src": "./img/works/hat-archiveinfo.png",
+        "alt_ja": "アーカイブページ（情報ディスプレイ）デザインカンプ",
+        "alt_en": "Archive page hat info design comp"
+        },
+        {
+        "src": "./img/works/hat-daily.png",
+        "alt_ja": "デイリーセレクトページのデザインカンプ",
+        "alt_en": "Daily Select page design comp"
+        },
+        {
+        "src": "./img/works/hat-search.png",
+        "alt_ja": "検索ページのデザインカンプ",
+        "alt_en": "Search page design comp"
+        }
+    ]
+    },
+    {
+    "id": 12,
+    "slug": "work-12",
+    "title_en": "Subscription Landing Page",
+    "title_ja": "サブスク LPサイト",
+    "date_en": "February 10, 2026",
+    "date_ja": "2026年02月10日",
+    "tools_en": "HTML / CSS3 / JavaScript / JSON / Figma",
+    "tools_ja": "HTML / CSS3 / JavaScript / JSON / Figma",
+    "site_url": "https://hanb0999.github.io/totonou-cloud/",
+    "overview_en": [
+        "Designed and developed a Gen Z–focused subscription service concept.",
+        "Built a conversion-driven landing page from planning to implementation.",
+        "Concept: “Documents, subscriptions, life — everything, organized.”",
+        "Solves post-graduation document overload and subscription chaos.",
+        "Centralized management system for documents + recurring payments."
+    ],
+    "overview_ja": [
+        "Z世代向けサブスクサービスを企画・設計。",
+        "企画から実装まで一貫して制作。",
+        "コンセプト: 「書類も、サブスクも、生活も。全部、整う。」",
+        "新社会人の管理ストレスを解決。",
+        "書類＋月額課金の統合管理を提案。"
+    ],
+    "role_en": [
+        "Developed service strategy based on persona research",
+        "Designed interactive prototype in Figma",
+        "Structured persuasive storytelling flow for conversions",
+        "Presented concept and compiled final documentation"
+    ],
+    "role_ja": [
+        "ペルソナ分析に基づくサービス設計",
+        "FigmaでUIプロトタイプ制作",
+        "申込導線を意識した構成設計",
+        "プレゼン・提出資料作成"
+    ],
+    "concept_en": [
+        "Clean and intuitive UI for instant clarity",
+        "Trust-based blue with strong yellow CTA contrast",
+        "Soft gradients to reduce the “heavy” feel of document management",
+        "Clear comparison table to highlight competitive advantage",
+        "Lightweight structure for speed and maintainability",
+        "Visual communication using spacing, icons, and subtle emojis"
+    ],
+    "concept_ja": [
+        "直感的でクリーンなUI設計",
+        "信頼感のあるブルー＋強調イエロー",
+        "重たい印象を和らげるグラデーション設計",
+        "比較表で優位性を明確化",
+        "軽量・高速・保守性を重視した実装",
+        "余白と視覚要素で直感的理解を促進"
+    ],
+    "reflections_en": [
+        "Learned to balance typography aesthetics with readability",
+        "Gained appreciation for objective, third-party feedback",
+        "Now prioritize Japanese readability and usability"
+    ],
+    "reflections_ja": [
+        "フォント選定と可読性のバランスを学習",
+        "第三者視点の重要性を実感",
+        "日本語の可読性をより重視する姿勢へ"
+    ],
+    "main_video": "./img/works/cloud.mp4",
+    "images": [
+        {
+        "src": "./img/works/cloud-designcomp.png",
+        "alt_ja": "整うCLOUD LPサイトデザインカンプ",
+        "alt_en": "Landing page design comp"
+        }
+    ]
+    }
+]
