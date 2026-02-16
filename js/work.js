@@ -130,23 +130,35 @@ function renderProjectPage(data) {
         toolBox.innerHTML = formattedTools;
     }
 
-    const container = document.getElementById('site-link-container');
-    if (container) {
-        container.innerHTML = ""; 
+    const siteLink = document.querySelector('.site-link');
+    document.querySelector('.mobile-site-note')?.remove(); 
     
+    if (siteLink) {
         if (data.site_url && data.site_url.trim() !== "" && data.site_url !== "#") {
-            const siteLink = document.createElement('a');
-            siteLink.className = 'site-link';
             siteLink.href = data.site_url;
-            siteLink.target = "_blank";
+            siteLink.style.display = "block";
             siteLink.innerHTML = `<span class="lang-ja">SITEを見る →</span><span class="lang-en">View Website →</span>`;
             
+            siteLink.onclick = (e) => {
+                if (window.innerWidth <= 768) {
+                    const msgJa = "このサイトはデスクトップ表示にのみ対応しています。モバイルでは正しく表示されない可能性があります。移動しますか？";
+                    const msgEn = "This website is optimized for desktop only and may not display correctly on mobile. Do you want to proceed?";
+                    
+                    const isEn = document.body.classList.contains('lang-en-active');
+                    const confirmMove = confirm(isEn ? msgEn : msgJa);
+                    
+                    if (!confirmMove) {
+                        e.preventDefault(); 
+                    }
+                }
+            };
+    
             const note = document.createElement('div');
             note.className = 'mobile-site-note';
             note.innerHTML = `<span class="lang-ja">※デスクトップ表示推奨</span><span class="lang-en">※Best viewed on Desktop</span>`;
-            
-            container.appendChild(siteLink);
-            container.appendChild(note);
+            siteLink.parentNode.insertBefore(note, siteLink.nextSibling);
+        } else {
+            siteLink.style.display = "none";
         }
     }
 
