@@ -241,27 +241,6 @@ function setupLightbox() {
                 lightbox.style.display = 'flex';
                 document.body.style.overflow = 'hidden';
             }
-
-            let touchStartX = 0;
-            let touchEndX = 0;
-        
-            lightbox.addEventListener('touchstart', e => {
-                touchStartX = e.changedTouches[0].screenX;
-            }, { passive: true });
-        
-            lightbox.addEventListener('touchend', e => {
-                touchEndX = e.changedTouches[0].screenX;
-                handleSwipe();
-            }, { passive: true });
-            
-            function handleSwipe() {
-                const swipeThreshold = 50; 
-                if (touchEndX < touchStartX - swipeThreshold) {
-                    navigate(1);
-                }
-                if (touchEndX > touchStartX + swipeThreshold) {
-                    navigate(-1);
-            }
         }
     });
 
