@@ -1140,8 +1140,8 @@ body.lang-en-active .detail-group h3 {
         font-size: 11px !important;
         color: #666 !important;
         margin-top: 10px !important;
-      font-family: 'BizUDP-Regular', "Hiragino Sans", "Meiryo", sans-serif !important;
-      line-height: 1.5;
+        font-family: 'BizUDP-Regular', sans-serif !important;
+        line-height: 1.5;
     }
     .bottom-logo {
         position: fixed;
