@@ -129,36 +129,25 @@ function renderProjectPage(data) {
         }
         toolBox.innerHTML = formattedTools;
     }
-
-    const siteLink = document.querySelector('.site-link-container');
-    const infoPanel = document.querySelector('.work-info-panel');
     
-    document.querySelector('.mobile-site-note')?.remove(); 
+    const container = document.getElementById('site-link-container');
+    if (container) {
+        container.innerHTML = ""; 
     
-    if (siteLink) {
         if (data.site_url && data.site_url.trim() !== "" && data.site_url !== "#") {
+            // Create the link element dynamically
+            const siteLink = document.createElement('a');
+            siteLink.className = 'site-link';
             siteLink.href = data.site_url;
-            siteLink.style.display = "block";
+            siteLink.target = "_blank";
             siteLink.innerHTML = `<span class="lang-ja">SITEを見る →</span><span class="lang-en">View Website →</span>`;
             
-            siteLink.onclick = (e) => {
-                if (window.innerWidth <= 768) {
-                    const isEn = document.body.classList.contains('lang-en-active');
-                    const msg = isEn 
-                        ? "This website is optimized for desktop and may not display correctly on mobile. Proceed?" 
-                        : "このサイトはデスクトップ専用に設計されています。モバイルでは正しく表示されない場合があります。移動しますか？";
-                    
-                    if (!confirm(msg)) e.preventDefault();
-                }
-            };
-    
             const note = document.createElement('div');
-            note.className = 'mobile-site-note'; 
+            note.className = 'mobile-site-note';
             note.innerHTML = `<span class="lang-ja">※デスクトップ表示推奨</span><span class="lang-en">※Best viewed on Desktop</span>`;
-            siteLink.parentNode.insertBefore(note, siteLink.nextSibling);
             
-        } else {
-            siteLink.style.display = "none";
+            container.appendChild(siteLink);
+            container.appendChild(note);
         }
     }
 
