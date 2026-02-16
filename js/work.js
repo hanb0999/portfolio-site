@@ -229,6 +229,9 @@ function setupLightbox() {
     const lbCaption = document.getElementById('lightbox-caption');
     let currentIndex = 0;
     
+    let touchStartX = 0;
+    let touchEndX = 0;
+
     const getGalleryItems = () => Array.from(document.querySelectorAll('#project-gallery-grid img, #project-gallery-grid video'));
 
     document.addEventListener('click', (e) => {
@@ -251,12 +254,10 @@ function setupLightbox() {
         updateLightbox(mediaElements);
     };
 
-    document.querySelector('.lb-next')?.addEventListener('click', (e) => { e.stopPropagation(); navigate(1); });
-    document.querySelector('.lb-prev')?.addEventListener('click', (e) => { e.stopPropagation(); navigate(-1); });
-
     function updateLightbox(elements) {
         const media = elements[currentIndex];
         if (!media) return;
+        
         const isEn = document.body.classList.contains('lang-en-active');
         lbImg.style.display = 'none'; 
         lbVideo.style.display = 'none'; 
@@ -277,14 +278,31 @@ function setupLightbox() {
         }
     }
 
+    lightbox.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    lightbox.addEventListener('touchend', e => {
+        touchEndX = e.changedTouches[0].screenX;
+        const swipeThreshold = 50;
+        if (touchEndX < touchStartX - swipeThreshold) navigate(1); // Swipe Left -> Next
+        if (touchEndX > touchStartX + swipeThreshold) navigate(-1); // Swipe Right -> Prev
+    }, { passive: true });
+
     const closeLb = () => { 
         if (lightbox) lightbox.style.display = 'none'; 
         lbVideo.pause();
         document.body.style.overflow = 'visible'; 
     };
 
+    document.querySelector('.lb-next')?.addEventListener('click', (e) => { e.stopPropagation(); navigate(1); });
+    document.querySelector('.lb-prev')?.addEventListener('click', (e) => { e.stopPropagation(); navigate(-1); });
     document.querySelector('.close-lightbox')?.addEventListener('click', closeLb);
-    lightbox?.addEventListener('click', (e) => { if (e.target === lightbox) closeLb(); });
+    
+    lightbox?.addEventListener('click', (e) => { 
+        if (e.target === lightbox || e.target.classList.contains('lb-container')) closeLb(); 
+    });
+
     document.addEventListener('keydown', (e) => {
         if (lightbox && lightbox.style.display === 'flex') {
             if (e.key === 'ArrowRight') navigate(1);
