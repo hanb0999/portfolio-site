@@ -202,11 +202,9 @@ header.scrolled .main-nav a {
     pointer-events: none;
     color: #000;
 }
-
-.card-link:nth-child(1) .card-label,
-.card-link:nth-child(3) .card-label,
+.card-link:nth-child(2) .card-label,
+.card-link:nth-child(4) .card-label,
 .card-link:nth-child(5) .card-label,
-.card-link:nth-child(7) .card-label,
 .card-link:nth-child(8) .card-label,
 .card-link:nth-child(9) .card-label {
     color: #ffffff !important;
