@@ -576,20 +576,20 @@ header.scrolled .main-nav a {
     height: 100%;
     object-fit: cover;
 }
-.work11-grid {
+.work12-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-.work11-grid > .image-box:first-child {
+.work12-grid > .image-box:first-child {
     grid-column: 1 / -1; 
     object-fit: cover;
 }
-.work11-grid > .image-box:not(:first-child) {
+.work12-grid > .image-box:not(:first-child) {
     aspect-ratio: 3 / 2; 
 }
 
-.work11-grid img {
+.work12-grid img {
     height: 100%;
     object-fit: cover;
 }
@@ -611,14 +611,14 @@ header.scrolled .main-nav a {
 @media (max-width: 600px) {
     .work1-square-grid,
     .work8-vertical-grid,
-    .work11-grid,
+    .work12-grid,
     .work3-grid,
     .work-grid {
         grid-template-columns: 1fr; 
     }
     .work1-square-grid .image-box,
     .work8-vertical-grid .image-box,
-    .work11-grid .image-box:not(:first-child) {
+    .work12-grid .image-box:not(:first-child) {
         aspect-ratio: auto; 
         height: auto;
     }
@@ -1202,7 +1202,7 @@ body.lang-en-active .detail-group h3 {
     }
     .work1-square-grid, 
     .work8-vertical-grid, 
-    .work11-grid, 
+    .work12-grid, 
     .work3-grid,
     .standard-visual-stack {
         width: 100% !important;
