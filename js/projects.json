@@ -296,61 +296,6 @@
     {
     "id": 6,
     "slug": "work-6",
-    "title_en": "ARTIST SITE",
-    "title_ja": "ARTIST SITE",
-    "date_en": "September 9, 2025",
-    "date_ja": "2025年09月09日",
-    "tools_en": "HTML / CSS3 / JavaScript / Illustrator / Photoshop / Premiere Pro",
-    "tools_ja": "HTML / CSS3 / JavaScript / Illustrator / Photoshop / Premiere Pro",
-    "site_url": "https://hanb0999.github.io/seventeen-site/",
-    "overview_en": [
-        "Designed an official-style artist website for the K-POP group 'SEVENTEEN.'",
-        "Engineered a comprehensive 5-page structure including Top Page, News, Biography, Discography, and Special pages.",
-        "Awarded the 'Best Structure Award' at the HAL 3-school joint contest (Tokyo, Osaka, Nagoya)."
-    ],
-    "overview_ja": [
-        "K-POPグループ「SEVENTEEN」を題材に、公式アーティストサイトを想定して制作",
-        "トップページ、ニュース、バイオグラフィ、ディスコグラフィ、スペシャルの全5ページ構成を設計",
-        "HAL東京・大阪・名古屋の3校合同コンテストにて「構成力賞」を受賞"
-    ],
-    "role_en": [
-        "Responsible for all design and coding.",
-        "Produced and edited the opening video for the landing page."
-    ],
-    "role_ja": [
-        "デザイン設計からコーディングまでをすべて担当",
-        "サイトオープニング用動画の編集"
-    ],
-    "concept_en": [
-        "Developed a cool, grunge-inspired visual identity based on the group's latest comeback concept.",
-        "Used light blue as the primary color to emphasize a 'cool' aesthetic, while respecting fandom colors.",
-        "Designed an intuitive onboarding experience that uses video to instantly communicate current activities."
-    ],
-    "concept_ja": [
-        "最新カムバックの世界観を軸に、クールでグランジ感のあるビジュアルを設計",
-        "ファンダムカラーを用いつつつ、かっこよさを重視したライトブルーをメインに採用",
-        "実運用を想定し、初見ユーザーにも現在の活動が直感的に伝わる導入を設計"
-    ],
-    "reflections_en": [
-        "While the structure was highly rated, expanding on interaction design remains a future goal.",
-        "Aim to explore immersive features like fan-engagement mini-games and membership systems."
-    ],
-    "reflections_ja": [
-        "構成を評価された一方、インタラクション面での発展が今後の課題",
-        "今後はミニゲームやログイン機能など、没入感のある体験設計に取り組みたい"
-    ],
-    "main_video": "./img/works/seventeen-top.mp4",
-    "images": [
-        {
-        "src": "./img/works/seventeen-site.png",
-        "alt_ja": "SEVENTEEN アーティストサイトのプレビュー",
-        "alt_en": "SEVENTEEN artist site preview"
-        }
-    ]
-    },
-    {
-    "id": 7,
-    "slug": "work-7",
     "title_en": "CUP DE AROMA",
     "title_ja": "CUP DE AROMA",
     "date_en": "September 30, 2025",
@@ -405,6 +350,77 @@
         { "src": "./img/works/cup-7.png", "alt_ja": "ペルソナ設定２", "alt_en": "User Persona (Context of Use)" },
         { "src": "./img/works/cup-8.png", "alt_ja": "社会的インパクト・世の中への影響", "alt_en": "Social Impact & Market Influence" },
         { "src": "./img/works/cup-9.png", "alt_ja": "結び", "alt_en": "Closing Slide" }
+    ]
+    },
+    {
+    "id": 7,
+    "slug": "work-7",
+    "title_en": "Subscription Landing Page",
+    "title_ja": "サブスク LPサイト",
+    "date_en": "February 10, 2026",
+    "date_ja": "2026年02月10日",
+    "tools_en": "HTML / CSS3 / JavaScript / JSON / Figma",
+    "tools_ja": "HTML / CSS3 / JavaScript / JSON / Figma",
+    "site_url": "https://hanb0999.github.io/totonou-cloud/",
+    "overview_en": [
+        "Designed and developed a Gen Z–focused subscription service concept.",
+        "Built a conversion-driven landing page from planning to implementation.",
+        "Concept: “Documents, subscriptions, life — everything, organized.”",
+        "Solves post-graduation document overload and subscription chaos.",
+        "Centralized management system for documents + recurring payments."
+    ],
+    "overview_ja": [
+        "Z世代向けサブスクサービスを企画・設計。",
+        "企画から実装まで一貫して制作。",
+        "コンセプト: 「書類も、サブスクも、生活も。全部、整う。」",
+        "新社会人の管理ストレスを解決。",
+        "書類＋月額課金の統合管理を提案。"
+    ],
+    "role_en": [
+        "Developed service strategy based on persona research",
+        "Designed interactive prototype in Figma",
+        "Structured persuasive storytelling flow for conversions",
+        "Presented concept and compiled final documentation"
+    ],
+    "role_ja": [
+        "ペルソナ分析に基づくサービス設計",
+        "FigmaでUIプロトタイプ制作",
+        "申込導線を意識した構成設計",
+        "プレゼン・提出資料作成"
+    ],
+    "concept_en": [
+        "Clean and intuitive UI for instant clarity",
+        "Trust-based blue with strong yellow CTA contrast",
+        "Soft gradients to reduce the “heavy” feel of document management",
+        "Clear comparison table to highlight competitive advantage",
+        "Lightweight structure for speed and maintainability",
+        "Visual communication using spacing, icons, and subtle emojis"
+    ],
+    "concept_ja": [
+        "直感的でクリーンなUI設計",
+        "信頼感のあるブルー＋強調イエロー",
+        "重たい印象を和らげるグラデーション設計",
+        "比較表で優位性を明確化",
+        "軽量・高速・保守性を重視した実装",
+        "余白と視覚要素で直感的理解を促進"
+    ],
+    "reflections_en": [
+        "Learned to balance typography aesthetics with readability",
+        "Gained appreciation for objective, third-party feedback",
+        "Now prioritize Japanese readability and usability"
+    ],
+    "reflections_ja": [
+        "フォント選定と可読性のバランスを学習",
+        "第三者視点の重要性を実感",
+        "日本語の可読性をより重視する姿勢へ"
+    ],
+    "main_video": "./img/works/cloud.mp4",
+    "images": [
+        {
+        "src": "./img/works/cloud-designcomp.png",
+        "alt_ja": "整うCLOUD LPサイトデザインカンプ",
+        "alt_en": "Landing page design comp"
+        }
     ]
     },
     {
@@ -466,6 +482,61 @@
     {
     "id": 9,
     "slug": "work-9",
+    "title_en": "ARTIST SITE",
+    "title_ja": "ARTIST SITE",
+    "date_en": "September 9, 2025",
+    "date_ja": "2025年09月09日",
+    "tools_en": "HTML / CSS3 / JavaScript / Illustrator / Photoshop / Premiere Pro",
+    "tools_ja": "HTML / CSS3 / JavaScript / Illustrator / Photoshop / Premiere Pro",
+    "site_url": "https://hanb0999.github.io/seventeen-site/",
+    "overview_en": [
+        "Designed an official-style artist website for the K-POP group 'SEVENTEEN.'",
+        "Engineered a comprehensive 5-page structure including Top Page, News, Biography, Discography, and Special pages.",
+        "Awarded the 'Best Structure Award' at the HAL 3-school joint contest (Tokyo, Osaka, Nagoya)."
+    ],
+    "overview_ja": [
+        "K-POPグループ「SEVENTEEN」を題材に、公式アーティストサイトを想定して制作",
+        "トップページ、ニュース、バイオグラフィ、ディスコグラフィ、スペシャルの全5ページ構成を設計",
+        "HAL東京・大阪・名古屋の3校合同コンテストにて「構成力賞」を受賞"
+    ],
+    "role_en": [
+        "Responsible for all design and coding.",
+        "Produced and edited the opening video for the landing page."
+    ],
+    "role_ja": [
+        "デザイン設計からコーディングまでをすべて担当",
+        "サイトオープニング用動画の編集"
+    ],
+    "concept_en": [
+        "Developed a cool, grunge-inspired visual identity based on the group's latest comeback concept.",
+        "Used light blue as the primary color to emphasize a 'cool' aesthetic, while respecting fandom colors.",
+        "Designed an intuitive onboarding experience that uses video to instantly communicate current activities."
+    ],
+    "concept_ja": [
+        "最新カムバックの世界観を軸に、クールでグランジ感のあるビジュアルを設計",
+        "ファンダムカラーを用いつつつ、かっこよさを重視したライトブルーをメインに採用",
+        "実運用を想定し、初見ユーザーにも現在の活動が直感的に伝わる導入を設計"
+    ],
+    "reflections_en": [
+        "While the structure was highly rated, expanding on interaction design remains a future goal.",
+        "Aim to explore immersive features like fan-engagement mini-games and membership systems."
+    ],
+    "reflections_ja": [
+        "構成を評価された一方、インタラクション面での発展が今後の課題",
+        "今後はミニゲームやログイン機能など、没入感のある体験設計に取り組みたい"
+    ],
+    "main_video": "./img/works/seventeen-top.mp4",
+    "images": [
+        {
+        "src": "./img/works/seventeen-site.png",
+        "alt_ja": "SEVENTEEN アーティストサイトのプレビュー",
+        "alt_en": "SEVENTEEN artist site preview"
+        }
+    ]
+    },
+    {
+    "id": 10,
+    "slug": "work-10",
     "title_en": "Cafe de PARIS",
     "title_ja": "Cafe de PARIS",
     "date_en": "November 27, 2025",
@@ -522,8 +593,8 @@
     ]
     },
     {
-    "id": 10,
-    "slug": "work-10",
+    "id": 11,
+    "slug": "work-11",
     "title_en": "Boulangerie HAL",
     "title_ja": "Boulangerie HAL",
     "date_en": "December 31, 2025",
@@ -580,9 +651,10 @@
         }
     ]
     },
+    
     {
-    "id": 11,
-    "slug": "work-11",
+    "id": 12,
+    "slug": "work-12",
     "title_en": "HAT A GOOD DAY",
     "title_ja": "HAT A GOOD DAY",
     "date_en": "February 06, 2026",
@@ -652,77 +724,6 @@
         "src": "./img/works/hat-search.png",
         "alt_ja": "検索ページのデザインカンプ",
         "alt_en": "Search page design comp"
-        }
-    ]
-    },
-    {
-    "id": 12,
-    "slug": "work-12",
-    "title_en": "Subscription Landing Page",
-    "title_ja": "サブスク LPサイト",
-    "date_en": "February 10, 2026",
-    "date_ja": "2026年02月10日",
-    "tools_en": "HTML / CSS3 / JavaScript / JSON / Figma",
-    "tools_ja": "HTML / CSS3 / JavaScript / JSON / Figma",
-    "site_url": "https://hanb0999.github.io/totonou-cloud/",
-    "overview_en": [
-        "Designed and developed a Gen Z–focused subscription service concept.",
-        "Built a conversion-driven landing page from planning to implementation.",
-        "Concept: “Documents, subscriptions, life — everything, organized.”",
-        "Solves post-graduation document overload and subscription chaos.",
-        "Centralized management system for documents + recurring payments."
-    ],
-    "overview_ja": [
-        "Z世代向けサブスクサービスを企画・設計。",
-        "企画から実装まで一貫して制作。",
-        "コンセプト: 「書類も、サブスクも、生活も。全部、整う。」",
-        "新社会人の管理ストレスを解決。",
-        "書類＋月額課金の統合管理を提案。"
-    ],
-    "role_en": [
-        "Developed service strategy based on persona research",
-        "Designed interactive prototype in Figma",
-        "Structured persuasive storytelling flow for conversions",
-        "Presented concept and compiled final documentation"
-    ],
-    "role_ja": [
-        "ペルソナ分析に基づくサービス設計",
-        "FigmaでUIプロトタイプ制作",
-        "申込導線を意識した構成設計",
-        "プレゼン・提出資料作成"
-    ],
-    "concept_en": [
-        "Clean and intuitive UI for instant clarity",
-        "Trust-based blue with strong yellow CTA contrast",
-        "Soft gradients to reduce the “heavy” feel of document management",
-        "Clear comparison table to highlight competitive advantage",
-        "Lightweight structure for speed and maintainability",
-        "Visual communication using spacing, icons, and subtle emojis"
-    ],
-    "concept_ja": [
-        "直感的でクリーンなUI設計",
-        "信頼感のあるブルー＋強調イエロー",
-        "重たい印象を和らげるグラデーション設計",
-        "比較表で優位性を明確化",
-        "軽量・高速・保守性を重視した実装",
-        "余白と視覚要素で直感的理解を促進"
-    ],
-    "reflections_en": [
-        "Learned to balance typography aesthetics with readability",
-        "Gained appreciation for objective, third-party feedback",
-        "Now prioritize Japanese readability and usability"
-    ],
-    "reflections_ja": [
-        "フォント選定と可読性のバランスを学習",
-        "第三者視点の重要性を実感",
-        "日本語の可読性をより重視する姿勢へ"
-    ],
-    "main_video": "./img/works/cloud.mp4",
-    "images": [
-        {
-        "src": "./img/works/cloud-designcomp.png",
-        "alt_ja": "整うCLOUD LPサイトデザインカンプ",
-        "alt_en": "Landing page design comp"
         }
     ]
     }
