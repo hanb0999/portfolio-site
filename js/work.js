@@ -60,9 +60,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error("Failed to load project data:", error);
     }
 
-    // FIND AND REPLACE ALL SCROLL LISTENERS WITH THIS SINGLE BLOCK:
 window.addEventListener('scroll', () => {
-    // Only apply the "scrolled" class effects if the screen is wider than 768px (Desktop)
     if (window.innerWidth > 768) {
         const header = document.querySelector('header');
         if (header) {
@@ -73,7 +71,6 @@ window.addEventListener('scroll', () => {
             }
         }
     } else {
-        // Force removal on mobile just in case it was triggered during a resize
         const header = document.querySelector('header');
         if (header) header.classList.remove('scrolled');
     }
@@ -135,7 +132,6 @@ function renderProjectPage(data) {
         container.innerHTML = ""; 
     
         if (data.site_url && data.site_url.trim() !== "" && data.site_url !== "#") {
-            // Create the link element dynamically
             const siteLink = document.createElement('a');
             siteLink.className = 'site-link';
             siteLink.href = data.site_url;
@@ -174,9 +170,9 @@ function renderProjectPage(data) {
         gridClass = "work1-square-grid"; 
     } else if (data.id === 8) {
         gridClass = "work8-vertical-grid"; 
-    } else if (data.id === 11) {
-        gridClass = "work11-grid"; 
-    } else if (data.id === 7) {
+    } else if (data.id === 12) {
+        gridClass = "work12-grid"; 
+    } else if (data.id === 6) {
         gridClass = "work3-grid"; 
     }
 
