@@ -47,7 +47,7 @@
         "reflections_en": [
         "Realized the challenges of establishing an original artistic style.",
         "Recognized instances of heavy influence from reference pieces.",
-        "Future Goal: Create original characters and unique recurring motifs."
+        "Future goal: Create original characters and unique recurring motifs."
         ],
         "reflections_ja": [
         "オリジナルの作風を確立することの難しさを実感",
@@ -97,9 +97,9 @@
         "concept_en": [
         "Proposed a 3D aesthetic to reflect 3D-printed product focus.",
         "Learned Blender from scratch for modeling and animation.",
-        "Initial Proposal: Monochrome design focusing strictly on form.",
-        "Refinement Phase: Adopted a chrome-style finish.",
-        "Final Version: 3D logo animation with a sky background."
+        "Initial proposal: Monochrome design focusing strictly on form.",
+        "Refinement phase: Adopted a chrome-style finish.",
+        "Final version: 3D logo animation with a sky background."
         ],
         "concept_ja": [
         "3Dプリント特性を踏まえ、立体感のあるロゴ表現を提案",
@@ -110,13 +110,11 @@
         ],
         "reflections_en": [
         "Gained valuable experience iterating based on direct client feedback.",
-        "Future Challenge: Proposing realistic mockups with products.",
-        "Future Challenge: Simulating contexts of use visually."
+        "Future challenge: Proposing realistic mockups with products."
         ],
         "reflections_ja": [
         "クライアントと直接やり取りし、改善を重ねた貴重な経験",
-        "今後の課題：ネイルが入った状態のリアルなモックアップ提案",
-        "今後の課題：商品の使用シーンを想定したビジュアル提案"
+        "今後の課題：ネイルが入った状態のリアルなモックアップ提案"
         ],
         "images": [
         { "src": "./img/works/3d-logo.gif", "alt_ja": "ロゴアニメーション", "alt_en": "3D Logo Animation" },
@@ -169,13 +167,11 @@
         ],
         "reflections_en": [
         "Challenge: Typography impact is low due to a composition that is too simple.",
-        "Future Improvement: Adjusting font sizes and strategic placement.",
-        "Future Improvement: Creating a layout focused on visual flow (eye-tracking)."
+        "Future improvement: Adjusting font sizes and strategic placement."
         ],
         "reflections_ja": [
         "全体構成がシンプルになりすぎ、タイポグラフィが目立っていない点が課題",
-        "今後の改善点：文字サイズの調整と配置の工夫",
-        "今後の改善点：視線誘導を意識したレイアウト"
+        "今後の改善点：文字サイズの調整と配置の工夫"
         ],
         "images": [
         { "src": "./img/works/shoukai-card.png", "alt_ja": "自己紹介ポスター：温度計をモチーフにしたデザイン", "alt_en": "Self-introduction poster: Design featuring a thermometer motif" }
@@ -407,7 +403,7 @@
     "reflections_en": [
         "Learned to balance typography aesthetics with readability",
         "Gained appreciation for objective, third-party feedback",
-        "Now prioritize Japanese readability and usability"
+        "Future to prioritize Japanese readability and usability"
     ],
     "reflections_ja": [
         "フォント選定と可読性のバランスを学習",
